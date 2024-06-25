@@ -1,40 +1,45 @@
-$bgcolor: red;
 /*
-  安充公共皮肤说明
+  说明
   1 颜色统一使用十六进制表示,方便查找更换
  */
-//企业色
+//主色
 $company-color: #142aff;
 $origin-company-button: #0c0c0a;
 $hover-company-button: #caa040;
+
 //辅助蓝色
 $disable-assist-blue-button: #b2dbff;
 $origin-assist-blue-button: #0087ff;
 $hover-assist-blue-button: #006ccc;
+
 //辅助黄色
 $origin-assist-yellow-button: #ffb73c;
 $hover-assist-yellow-button: #ff9820;
+
 //辅助紫色
 $disable-assist-violet-button: #cbcde5; //暂无使用
 $origin-assist-violet-button: #7f84c0;
 $hover-assist-violet-button: #656bb3;
 
-// 按钮主色
+// 按钮色
 $btn-bg-color:#142aff;
 $btn-hover-bg-color:#1021cc;
-
-
 $btn-recovery-bg-color:#e7e9ff;
 $btn-recovery-border-color:rgba(20, 42, 255, .2);
 $btn-recovery-hover-bg-color:#d0d4ff;
+
 //灰色按钮
 $disable-grey-button: #e8e8e8;
 $origin-grey-button: #e8e8e8;
 $hover-grey-button: #c8c8c8;
+
 //功能色
 $disable-operation-button: #ffc1ad;
 $origin-operation-button: #ff6632;
 $hover-operation-button: #e55b2c;
+
+// 导航栏
+$nav-text-color:#666;
 
 // logo大小
 $logo_width: 100%;

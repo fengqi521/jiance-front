@@ -1,109 +1,7 @@
 <template>
     <section>
         <div class="section-title">首页</div>
-        <div class="section-list section-statistic clearfix">
-            <div class="statistic-top">
-                <div class="statistic-item-outer">
-                    <div class="statistic-item">
-                        <span class="statistic-img statistic-img-1"></span>
-                        <div class="statistic-content">
-                            <p>
-                                当前APP用户总数（个）
-                                <el-tooltip class="item" content="截止到十分钟前" placement="right">
-                                    <div class="tips-icon-1"></div>
-                                </el-tooltip>
-                            </p>
-                            <div class="statistic-detail">
-                                <span class="ellipsis" :class="{
-                                    'detail-special': !parseFloat(header_info.s_user_count),
-                                }">
-                                    {{ parseFloat(header_info.s_user_count) ? header_info.s_user_count : 0 }}
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="statistic-item-outer">
-                    <div class="statistic-item" style="background: #7f84c0">
-                        <span class="statistic-img statistic-img-2"></span>
-                        <div class="statistic-content">
-                            <p>
-                                当前总订单数（个）
-                                <el-tooltip class="item" content="截止到十分钟前" placement="right">
-                                    <div class="tips-icon-1"></div>
-                                </el-tooltip>
-                            </p>
-                            <div class="statistic-detail">
-                                <span class="ellipsis" :class="{
-                                    'detail-special': !parseFloat(header_info.s_order_total),
-                                }">
-                                    {{ parseFloat(header_info.s_order_total) ? header_info.s_order_total : 0 }}
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="statistic-item-outer">
-                    <div class="statistic-item" style="background: #ffb73c">
-                        <span class="statistic-img statistic-img-3"></span>
-                        <div class="statistic-content">
-                            <p>
-                                当前充电站数（个）
-                                <el-tooltip class="item" content="截止到十分钟前" placement="right">
-                                    <div class="tips-icon-1"></div>
-                                </el-tooltip>
-                            </p>
-                            <div class="statistic-detail">
-                                <span class="ellipsis" :class="{
-                                    'detail-special': !parseFloat(header_info.s_station_count),
-                                }">
-                                    {{ parseFloat(header_info.s_station_count) ? header_info.s_station_count : 0 }}
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="statistic-item-outer">
-                    <div class="statistic-item">
-                        <span class="statistic-img statistic-img-4"></span>
-                        <div class="statistic-content">
-                            <p>
-                                当前充电桩数（个）
-                                <el-tooltip class="item" content="截止到十分钟前" placement="right">
-                                    <div class="tips-icon-1"></div>
-                                </el-tooltip>
-                            </p>
-                            <div class="statistic-detail">
-                                <span class="ellipsis" :class="{
-                                    'detail-special': !parseFloat(header_info.s_pile_total),
-                                }">
-                                    {{ parseFloat(header_info.s_pile_total) ? header_info.s_pile_total : 0 }}
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="statistic-item-outer">
-                    <div class="statistic-item" style="background: #7f84c0">
-                        <span class="statistic-img statistic-img-5"></span>
-                        <div class="statistic-content">
-                            <p>
-                                充电总度数（度）
-                                <el-tooltip class="item" content="截止到十分钟前" placement="right">
-                                    <div class="tips-icon-1"></div>
-                                </el-tooltip>
-                            </p>
-                            <div class="statistic-detail">
-                                <span class="ellipsis" :class="{
-                                    'detail-special': !parseFloat(header_info.s_quantity_total),
-                                }">
-                                    {{ parseFloat(header_info.s_quantity_total) ? header_info.s_quantity_total : 0 }}
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="section-list section-statistic">
             <div class="statistic-bottom">
                 <div class="section-amount">
                     <div class="statistic-item-outer section-amount-1">
@@ -112,10 +10,7 @@
                             <span class="statistic-img amount-img-1"></span>
                             <div class="statistic-content">
                                 <p>
-                                    订单服务费总额（元）
-                                    <el-tooltip class="item" content="截止到十分钟前" placement="right">
-                                        <div class="tips-icon"></div>
-                                    </el-tooltip>
+                                    设备数量（个）
                                 </p>
                                 <div class="statistic-detail">
                                     <span class="ellipsis" :style="{
@@ -127,106 +22,33 @@
                             </div>
                         </div>
                     </div>
-                    <div class="statistic-item-outer">
-                        <div class="statistic-item">
-                            <span class="statistic-img amount-img-2"></span>
-                            <div class="statistic-content">
-                                <p>
-                                    订单优惠总额（元）
-                                    <el-tooltip class="item" content="截止到十分钟前" placement="right">
-                                        <div class="tips-icon"></div>
-                                    </el-tooltip>
-                                </p>
-                                <div class="statistic-detail">
-                                    <span class="ellipsis" :style="{
-                                        color: parseFloat(header_info.s_preferential_total) ? '#80ADFF' : '',
-                                    }">
-                                        {{ header_info.s_preferential_total }}
-                                    </span>
-                                </div>
+                    <div class="statistic-item">
+                        <span class="statistic-img amount-img-2"></span>
+                        <div class="statistic-content">
+                            <p>
+                                在线设备（个）
+                            </p>
+                            <div class="statistic-detail">
+                                <span class="ellipsis" :style="{
+                                    color: parseFloat(header_info.s_preferential_total) ? '#80ADFF' : '',
+                                }">
+                                    {{ header_info.s_preferential_total }}
+                                </span>
                             </div>
                         </div>
                     </div>
-                    <div class="statistic-item-outer">
-                        <div class="statistic-item">
-                            <span class="statistic-img amount-img-3"></span>
-                            <div class="statistic-content">
-                                <p>
-                                    订单未支付总额（元）
-                                    <el-tooltip class="item" content="截止到十分钟前" placement="right">
-                                        <div class="tips-icon"></div>
-                                    </el-tooltip>
-                                </p>
-                                <div class="statistic-detail">
-                                    <span class="ellipsis" :style="{
-                                        color: parseFloat(header_info.s_unpaid_total) ? '#80ADFF' : '',
-                                    }">
-                                        {{ header_info.s_unpaid_total }}
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section-amount">
-                    <div class="statistic-item-outer section-amount-1">
-                        <div class="statistic-item">
-                            <span class="statistic-line" style="background: #7f84c0"></span>
-                            <span class="statistic-img amount-img-4"></span>
-                            <div class="statistic-content">
-                                <p>
-                                    订单电费总额（元）
-                                    <el-tooltip class="item" content="截止到十分钟前" placement="right">
-                                        <div class="tips-icon"></div>
-                                    </el-tooltip>
-                                </p>
-                                <div class="statistic-detail">
-                                    <span class="ellipsis" :style="{
-                                        color: parseFloat(header_info.s_charge_total) ? '#7F84C0' : '',
-                                    }">
-                                        {{ header_info.s_charge_total }}
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="statistic-item-outer">
-                        <div class="statistic-item">
-                            <span class="statistic-img amount-img-5"></span>
-                            <div class="statistic-content">
-                                <p>
-                                    实际营收总额（元）
-                                    <el-tooltip class="item" content="截止到十分钟前" placement="right">
-                                        <div class="tips-icon"></div>
-                                    </el-tooltip>
-                                </p>
-                                <div class="statistic-detail">
-                                    <span class="ellipsis" :style="{
-                                        color: parseFloat(header_info.s_real_total) ? '#FF6632' : '',
-                                    }">
-                                        {{ header_info.s_real_total }}
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="statistic-item-outer">
-                        <div class="statistic-item">
-                            <span class="statistic-img amount-img-6"></span>
-                            <div class="statistic-content">
-                                <p>
-                                    售后退款总额（元）
-                                    <el-tooltip class="item" content="截止到十分钟前" placement="right">
-                                        <div class="tips-icon"></div>
-                                    </el-tooltip>
-                                </p>
-                                <div class="statistic-detail">
-                                    <span class="ellipsis" :style="{
-                                        color: parseFloat(header_info.s_handle_total) ? '#7F84C0' : '',
-                                    }">
-                                        {{ header_info.s_handle_total }}
-                                    </span>
-                                </div>
+                    <div class="statistic-item">
+                        <span class="statistic-img amount-img-3"></span>
+                        <div class="statistic-content">
+                            <p>
+                                离线设备（个）
+                            </p>
+                            <div class="statistic-detail">
+                                <span class="ellipsis" :style="{
+                                    color: parseFloat(header_info.s_unpaid_total) ? '#80ADFF' : '',
+                                }">
+                                    {{ header_info.s_unpaid_total }}
+                                </span>
                             </div>
                         </div>
                     </div>

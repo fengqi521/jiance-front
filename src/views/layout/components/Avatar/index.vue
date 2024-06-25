@@ -55,6 +55,10 @@ export default {
             margin: 0;
             padding: 2px 0
         }
+
+        .user-item:first-child{
+            font-weight: bold;
+        }
     }
 }
 </style>
