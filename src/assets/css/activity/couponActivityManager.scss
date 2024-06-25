@@ -1,0 +1,228 @@
+//解决padding-bottom换不换行的下边距问题
+@media screen and (min-width: 1713px) {
+    .content-item{
+        padding-bottom: 0 !important;
+    }
+    .header-content-bottom{
+        height: 48px ;
+    }
+}
+
+.coupon-ac-ma{
+    .header-content {
+        padding-top: 16px;
+        max-height: 104px;
+        min-height: 48px;
+        .content-item {
+            float: left;
+            position: relative;
+            padding: 0 40px 24px 0;
+    
+            &:last-child {
+                padding-right: 0;
+            }
+    
+            .el-select {
+                position: relative;
+                width: 150px;
+    
+                /deep/ .el-input__inner {
+                    height: 32px;
+                    line-height: 30px;
+                }
+            }
+    
+            .header-left {
+                float: left;
+                padding-right: 24px;
+                font-size: 12px;
+                color: rgba(51, 51, 51, 1);
+                line-height: 32px;
+            }
+            
+            .end-time{
+                height: 32px;
+            }
+    
+            .header-right {
+                float: left;
+            }   
+        }
+    
+    }
+    
+    .section-container {
+        padding: 0 24px 24px;
+        // min-width: 1150px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 2px;
+        border: 1px solid rgba(231, 232, 233, 1);
+        .section-item-header {
+            padding: 12px 0;
+            height: 56px;
+         
+            span {
+                padding: 16px 0;
+            }
+        
+            a {
+                float: left;
+                display: block;
+                margin-right: 32px;
+                line-height: 55px;
+                color: #333333;
+        
+                &.section-act {
+                    position: relative;
+                    color: #CAA040;
+        
+                    &:after {
+                        position: absolute;
+                        display: block;
+                        content: '';
+                        left: 0;
+                        bottom: -1px;
+                        transform: translateY(25%);
+                        width: 100%;
+                        height: 2px;
+                        background: #CAA040;
+                    }
+                }
+            }
+    
+            
+    
+        }
+        .add-coupon{
+            span {
+                height: 32px;
+                line-height: 32px;
+            }
+            a:hover{
+                color: #fff;
+            }
+            .add-coupon,
+            .send-btn {
+                position: relative;
+                margin-left: 16px;
+                float: right;
+                width: auto;
+                padding: 0 16px 0 42px;
+                height: 32px;
+                font-size: 12px;
+                line-height: 32px;
+    
+                i {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    left: 16px;
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    background: url('../../assets/img/add-station.png') no-repeat;
+                    background-size: cover;
+                }
+            }
+    
+            .send-btn {
+                text-align: center;
+                padding: 0 16px;
+    
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+        .section-item-header {
+            padding: 0;
+            height: 56px;
+        
+            span {
+                padding: 16px 0;
+            }
+        
+            a {
+                float: left;
+                display: block;
+                margin-right: 32px;
+                line-height: 55px;
+                color: #333333;
+        
+                &.section-act {
+                    position: relative;
+                    color: #CAA040;
+        
+                    &:after {
+                        position: absolute;
+                        display: block;
+                        content: '';
+                        left: 0;
+                        bottom: -1px;
+                        transform: translateY(25%);
+                        width: 100%;
+                        height: 2px;
+                        background: #CAA040;
+                    }
+                }
+            }
+        }
+    
+    
+        .section-main {
+            padding-top: 16px;
+    
+            .table {
+                .td-item {
+                    padding: 0 5px;
+                }
+    
+                .table-operate {
+                    .td-item {
+                        margin: 0 8px;
+                        padding: 0;
+                    }
+                }
+    
+                .knob-text {
+                    padding-left: 8px;
+                }
+            }
+        }
+    }
+    
+    .el-select-dropdown .el-select-dropdown__item {
+        height: 32px;
+        line-height: 32px;
+    }
+    /deep/ .el-input .el-input__inner{
+        height: 32px;
+    }
+    
+    .permission-box {
+        /deep/ .box-outer {
+            width: 592px;
+    
+            .box-name {
+                padding: 24px 0 8px;
+                font-size: 12px;
+                font-weight: bold;
+                color: rgba(51, 51, 51, 1);
+                line-height: 20px;
+            }
+    
+            .box-main {
+                padding: 8px 12px;
+                overflow-y: auto;
+                font-size: 12px;
+                color: rgba(51, 51, 51, 1);
+                line-height: 20px;
+                height: 216px;
+                background: rgba(232, 232, 232, 1);
+                border-radius: 3px;
+            }
+        }
+    }
+}
+

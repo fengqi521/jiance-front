@@ -1,0 +1,43 @@
+.el-tooltip__popper {
+    padding: 8px;
+    border-radius: 2px;
+}
+
+.el-tooltip__popper.is-dark {
+    max-width: 142px;
+    min-width: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+.el-tooltip__popper[x-placement^=top] .popper__arrow {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    border-top-color: rgba(0, 0, 0, 0.8);
+    border-bottom-width: 0
+}
+
+.el-tooltip__popper[x-placement^=bottom] .popper__arrow {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    border-top-width: 0;
+    border-bottom-color: rgba(0, 0, 0, 0.8);
+}
+
+.el-tooltip__popper[x-placement^=right] .popper__arrow {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    border-right-color: rgba(0, 0, 0, 0.8);
+    border-left-width: 0
+}
+
+.el-tooltip__popper[x-placement^=left] .popper__arrow {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    border-right-width: 0;
+    border-left-color: rgba(0, 0, 0, 0.8);
+}
+
+.el-tooltip__popper .popper__arrow::after {
+    display: none;
+}

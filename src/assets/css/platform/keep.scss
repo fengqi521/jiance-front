@@ -1,0 +1,21 @@
+.section-tips {
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    background: rgba(255, 183, 60, 0.15);
+    border-radius: 3px;
+    margin-bottom: 8px;
+
+    i {
+        display: inline-flex;
+    }
+
+    .tips-text {
+        padding-left: 12px;
+        font-size: 14px;
+        color: rgba(102, 102, 102, 1);
+        line-height: 24px;
+    }
+
+}

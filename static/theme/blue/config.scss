@@ -1,0 +1,135 @@
+$bgcolor: red;
+/*
+  安充公共皮肤说明
+  1 颜色统一使用十六进制表示,方便查找更换
+ */
+//企业色
+$company-color: #142aff;
+$origin-company-button: #0c0c0a;
+$hover-company-button: #caa040;
+//辅助蓝色
+$disable-assist-blue-button: #b2dbff;
+$origin-assist-blue-button: #0087ff;
+$hover-assist-blue-button: #006ccc;
+//辅助黄色
+$origin-assist-yellow-button: #ffb73c;
+$hover-assist-yellow-button: #ff9820;
+//辅助紫色
+$disable-assist-violet-button: #cbcde5; //暂无使用
+$origin-assist-violet-button: #7f84c0;
+$hover-assist-violet-button: #656bb3;
+
+// 按钮主色
+$btn-bg-color:#142aff;
+$btn-hover-bg-color:#1021cc;
+
+
+$btn-recovery-bg-color:#e7e9ff;
+$btn-recovery-border-color:rgba(20, 42, 255, .2);
+$btn-recovery-hover-bg-color:#d0d4ff;
+//灰色按钮
+$disable-grey-button: #e8e8e8;
+$origin-grey-button: #e8e8e8;
+$hover-grey-button: #c8c8c8;
+//功能色
+$disable-operation-button: #ffc1ad;
+$origin-operation-button: #ff6632;
+$hover-operation-button: #e55b2c;
+
+// logo大小
+$logo_width: 100%;
+$logo_height: 48px;
+
+// 侧边栏
+$act-aside: #001529; // 选中的一个大板块的背景
+$act-aside-list: #4f60ff;
+$aside-act-after: #6675ff; //侧边栏选中-左边的小条条颜色
+
+// table
+$table-border-color: #eeeff1;
+
+// 路由-active
+// 切换页面 and 路由回退
+$section-act: #d3b050; //多路由选中的颜色---一般和企业色的原始色一样
+
+// knob 开关按钮 switch
+$knob-started: rgba(211, 176, 80, 0.5); //开-背景
+$knob-started-before: #caa040; //开-点
+$knob-stop: #e8e8e8; //关-背景 --一般和$disable-grey-button同色
+$knob-stop-before: #bcbcbc; //关-点
+
+// 加载中 loading 颜色
+$loading-path: #d3b050; //---一般和企业色的原始色一样
+
+// 批量导入的文字
+// 设备管理-充电桩管理-批量导入---特殊
+$out-car-word: #fff;
+
+//批量导入-进度条背景
+$import-process: rgba(211, 176, 80, 0.5) !important;
+
+// 图标区间
+// 导入
+$out-car: url('../../../static/theme/blue/img/out-car.svg');
+// 导出
+$export-icon: url('../../../static/theme/blue/img/export-icon.png');
+
+// 所有 : hover 文字颜色和下划线（and更换图片）
+$a-hover: #caa040;
+
+// nav top 左上角logo所在那个长条的颜色
+$nav-top-background: #FFF; //背景
+$nav-user-name: #c4993a; //用户名背景
+$nav-user-name-color: #ffffff; //用户名的文字
+$nav-user-name-arrow: #ffffff; //用户名右边尖角号
+
+//未开始-未兑换-未使用-未支付-待处理   进行中   已结束
+$section-no-begin: #ff6632; //ota升级失败
+$section-running: #46be00; //ota 在线状态、ota升级升级中
+$section-end: #666666; //ota升级成功
+
+// 设备管理-资产管理-最大授权设备数量
+$amount-item-number: #666;
+$amount-item-now: #666666;
+
+// input focus right
+$input-right: #0087ff;
+$input-right-focus: #0087ff;
+// input focus error
+$form-error: #ff3d00;
+$form-error-word: #ff3d00;
+
+// notice 提示信息
+$notice-success: #46be00;
+$notice-success-after: #46be00; //左边的线
+$notice-success-background: #daf2cc;
+$notice-warning: #ffa830;
+$notice-warning-after: #ffb73c;
+$notice-warning-background: #fff1d8;
+$notice-error: #e55b2c;
+$notice-error-after: #ff6632;
+$notice-error-background: #ffe0d6;
+
+// 平台成员管理-大客户-重置密码（有下划线的编辑）
+$edit-amount: url('../../../static/theme/blue/img/edit-icon.png');
+
+// 运维管理-批量充电-刷新
+$refresh: url('../../../static/theme/blue/img/refresh.png');
+//运维管理-批量充电-电量显示占比图
+$elec: url('../../../static/theme/blue/img/elec.png');
+$elec-hover: url('../../../static/theme/blue/img/elec-hover.png');
+$elec-100: url('../../../static/theme/blue/img/elec-100.png');
+$elec-click: #0087ff; //选中充电枪数量的背景色
+$elec-number: #666666; //充电枪数量下面为0显示的颜色
+$elec-green: #666666; //充电枪数量下面除故障数、离线数，不为0显示的颜色
+$elec-red: #ff6632; //充电枪数量下面故障数、离线数
+$elec-word: #666666; //充电枪数量下面直流枪、交流枪、在线等文字颜色
+// 运维管理-批量充电-单选框-充电枪状态
+$elec-content: #333333; //其他
+$elec-content-green: #46be00; //在线
+$elec-content-red: #ff6632; //离线，故障
+// 单选内-直流和交流
+$elec-type-zhi-color: #46be00;
+$elec-type-zhi-background: rgba(70, 190, 0, 0.15);
+$elec-type-jiao-color: #679cff;
+$elec-type-jiao-background: rgba(128, 173, 255, 0.2);

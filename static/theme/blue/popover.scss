@@ -1,0 +1,19 @@
+.el-popover{
+    padding:12px;
+    background:rgba(255, 255, 255, 1);
+    box-shadow:0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+    border:1px solid rgba(224, 224, 224, 1);
+    border-radius: 2px;
+}
+
+.el-popper .popper__arrow{
+    top: 12px !important;
+}
+
+.el-popover[x-placement^=left] {
+    margin-right: 0px;
+}
+.el-popover[x-placement^=right] {
+    margin-left: 0px;
+}
+

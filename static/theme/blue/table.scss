@@ -1,0 +1,389 @@
+/* 查看icon */
+.see-icon {
+  width: 20px;
+  height: 20px;
+  background: url('img/see.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.see-icon:hover {
+  background: url('img/see-hover.png') no-repeat;
+  background-size: cover;
+}
+/* 关联icon */
+.connect-icon {
+  width: 20px;
+  height: 20px;
+  background: url('img/connect.svg') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.connect-icon:hover {
+  background: url('img/connect-hover.svg') no-repeat;
+  background-size: cover;
+}
+
+/* 导出icon */
+//.export-icon {
+//    width: 20px;
+//    height: 20px;
+//    background: url('img/export.png') no-repeat;
+//    background-size: cover;
+//    cursor: pointer;
+//}
+//
+//.export-icon:hover {
+//    background: url('img/export-hover.png') no-repeat;
+//    background-size: cover;
+//}
+
+/* 提现icon */
+.cash-icon {
+  width: 20px;
+  height: 20px;
+  background: url('img/cash.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.cash-icon:hover {
+  background: url('img/cash-hover.png') no-repeat;
+  background-size: cover;
+}
+
+.cash-disabled-icon,
+.cash-disabled-icon:hover {
+  width: 20px;
+  height: 20px;
+  background: url('img/cash-disabled.png') no-repeat;
+  background-size: cover;
+  cursor: not-allowed;
+}
+
+/* 编辑icon */
+.edit-icon {
+  width: 20px;
+  height: 20px;
+  background: url('img/edit.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.edit-icon:hover {
+  background: url('img/edit-hover.png') no-repeat;
+  background-size: cover;
+}
+
+.edit-icon-disable,
+.edit-icon-disable:hover {
+  width: 20px;
+  height: 20px;
+  background: url('img/edit-disabled.png') no-repeat;
+  background-size: cover;
+  cursor: not-allowed;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.config-icon {
+  background: url('img/config.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.config-icon:hover {
+  background: url('img/config-hover.png') no-repeat;
+  background-size: cover;
+}
+
+/* 运维icon */
+.maintain-icon {
+  width: 20px;
+  height: 20px;
+  background: url('img/maintain.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.maintain-icon:hover {
+  background: url('img/maintain-hover.png') no-repeat;
+  background-size: cover;
+}
+
+/* 第三方登录接入icon */
+.third-icon {
+  width: 20px;
+  height: 20px;
+  background: url('img/third.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.third-icon:hover {
+  background: url('img/third-hover.png') no-repeat;
+  background-size: cover;
+}
+
+/* 删除icon */
+.delete-icon {
+  width: 20px;
+  height: 20px;
+  margin-inline: 8px;
+  background: url('img/delete.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.delete-icon:hover {
+  background: url('img/delete-hover.png') no-repeat;
+  background-size: cover;
+}
+
+.delete-disabled-icon,
+.delete-disabled-icon:hover {
+  width: 20px;
+  height: 20px;
+  background: url('img/delete-disabled.png') no-repeat;
+  background-size: cover;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* 停止icon */
+.stop-icon {
+  width: 20px;
+  height: 20px;
+  background: url('img/stop.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.stop-disabled-icon {
+  width: 20px;
+  height: 20px;
+  background: url('img/stop-disabled.png') no-repeat;
+  background-size: cover;
+  cursor: not-allowed;
+}
+
+.stop-icon:hover {
+  background: url('img/stop-hover.png') no-repeat;
+  background-size: cover;
+}
+
+/* 二维码icon */
+.qrcode-icon {
+  width: 20px;
+  height: 20px;
+  background: url('img/qrcode.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.qrcode-icon:hover {
+  background: url('img/qrcode-hover.png') no-repeat;
+  background-size: cover;
+}
+
+/* 置顶icon */
+.topping-icon {
+  width: 20px;
+  height: 20px;
+  background: url('img/top.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.topping-icon:hover {
+  background: url('img/top-hover.png') no-repeat;
+  background-size: cover;
+}
+
+/* 充值icon */
+.recharge-icon {
+  width: 20px;
+  height: 20px;
+  background: url('img/recharge.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.recharge-icon:hover {
+  background: url('img/recharge-hover.png') no-repeat;
+  background-size: cover;
+}
+
+/* 调整余额icon */
+.balance-icon {
+  width: 20px;
+  height: 20px;
+  background: url('img/balance.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.balance-icon:hover {
+  background: url('img/balance-hover.png') no-repeat;
+  background-size: cover;
+}
+
+/* 清除icon */
+.clear-icon {
+  width: 16px;
+  height: 16px;
+  background: url('img/clear-icon.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.clear-icon:hover {
+  background: url('img/clear-icon-hover.png') no-repeat;
+  background-size: cover;
+}
+
+/* 多选icon */
+.checkbox-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url('img/checkbox.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.checkbox-act-icon {
+  background: url('img/checkbox-act.png') no-repeat;
+  background-size: cover;
+}
+
+.checkbox-some-icon {
+  background: url('img/checkbox-some.png') no-repeat;
+  background-size: cover;
+}
+
+.unShow-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url('img/checkbox-unShow.png') no-repeat;
+  background-size: cover;
+}
+
+.show-icon {
+  background: url('img/checkbox-show.png') no-repeat;
+  background-size: cover;
+}
+
+.checkbox-disabled-icon {
+  background: url('img/checkbox-disabled.png') no-repeat;
+  background-size: cover;
+  cursor: not-allowed;
+}
+
+/* 暂无权限icon */
+.message-error-icon {
+  background: url('img/error-icon.png') no-repeat;
+  background-size: cover;
+}
+
+/* 警告icon */
+.warning-icon {
+  width: 20px;
+  height: 20px;
+  background: url('img/warning-icon.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* 基础版icon */
+.basic-icon {
+  width: 48px;
+  height: 48px;
+  background: url('img/basic-icon.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* 余额icon */
+.balance-img {
+  width: 72px;
+  height: 72px;
+  background: url('img/balance-m.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* 充值icon */
+.recharge-img {
+  width: 72px;
+  height: 72px;
+  background: url('img/recharge-m.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* 消费总计icon */
+.spend-img {
+  width: 72px;
+  height: 72px;
+  background: url('img/spend-m.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.table-status .td-item {
+  color: #666;
+}
+
+.table-status .td-item i {
+  display: inline-flex;
+  margin-right: 8px;
+  width: 8px;
+  height: 8px;
+  background: rgba(208, 212, 214, 1);
+  border: 1px solid rgba(189, 194, 197, 1);
+  border-radius: 4px;
+}
+
+.table-status .td-item.td-online i {
+  background: $section-running;
+  border: 1px solid $section-running;
+}
+
+/*故障*/
+.table-status .td-item.td-fault {
+  color: $origin-operation-button;
+}
+
+/* 解锁icon */
+.unlock-icon {
+  width: 20px;
+  height: 20px;
+  background: url('img/lock-icon.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.unlock-icon:hover {
+  background: url('img/lock-hover.png') no-repeat;
+  background-size: cover;
+}
+
+//运营管理-活动管理-复制操作
+/* 复制icon */
+.copy-icon {
+  width: 20px;
+  height: 20px;
+  background: url('img/copy.png') no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.copy-icon:hover {
+  background: url('img/copy-hover.png') no-repeat;
+  background-size: cover;
+}

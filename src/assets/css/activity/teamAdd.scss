@@ -1,0 +1,417 @@
+.section-container {
+    padding: 0 24px 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+}
+
+.team-box {
+    /deep/ .box-outer {
+        padding-top: 16px;
+        .section-list {
+            padding-bottom: 24px;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+
+            .section-left {
+                // max-width: 72px;
+                height: 40px;
+                float: left;
+                font-size: 12px;
+                color: rgba(102, 102, 102, 1);
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+
+                .team-left-blod {
+                    font-size: 12px;
+                    color: #333333;
+                }
+
+            }
+
+            .section-right {
+                margin-left: 88px;
+                // width: 752px;
+
+                .input-640 {
+                    width: 720px !important;
+                    height: 156px !important;
+
+                    .el-textarea__inner {
+                        width: 720px;
+                        height: 156px;
+                    }
+                }
+
+                .input-144 {
+                   width: 144px !important;
+                   margin: 0 8px;
+
+                    /deep/ .el-input__inner{
+                        width: 144px;
+                        height: 36px;
+                    }
+                }
+
+                .input-160 {
+                    width: 160px !important;
+                    margin: 0 8px;
+ 
+                     /deep/ .el-input__inner{
+                         width: 160px;
+                         height: 36px;
+                     }
+                 }
+                
+                .team-unit {
+                    margin-left: 8px;
+                    color: #666666;
+                    font-size: 12px;
+                }
+
+                .team-valid {
+                    color: #999999;
+                    font-size: 12px;
+                    margin-left: 8px;
+                }
+
+                .team-pay {
+                    padding-top: 2px;
+
+                    .el-form-item__error {
+                       margin-left: 8px; 
+                    }
+                }
+
+                .team-serve {
+                    margin-top: 24px;
+
+                    .el-form-item__error {
+                        margin-left: 8px; 
+                    }
+                }
+
+                .team-ac-enjoy {
+                    color: #666666;
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+
+                .el-textarea {
+                    width: 304px;
+                    height: 96px;
+                }
+
+                .el-input {
+                    width: 304px;
+                }
+
+                .el-form-item  {
+                    display: inline-block;
+                }
+
+                .el-date-editor {
+                    width: 150px;
+                }
+
+                .time-text {
+                    float: left;
+                    padding: 0 12px;
+                    font-size: 12px;
+                    color: rgba(102, 102, 102, 1);
+                    line-height: 36px;
+                }
+
+                &.time-outer {
+                    height: 36px;
+
+                    .el-form-item {
+                        float: left;
+                    }
+                }
+
+                .radio-outer {
+                    display: flex;
+                    height: 36px;
+                    align-items: center;
+
+                    .el-radio {
+                        padding-right: 32px;
+                    }
+                }
+
+                .coverImg,
+                .add-uploader {
+                    width: 236px;
+                    height: 98px;
+                    background-color: #F5F5F5;
+                    border: 1px dashed #E0E0E0;
+                    border-radius: 2px;
+                }
+                
+                .add-uploader_tan {
+                    width: 74px;
+                    height: 98px;
+                }
+
+                .cover-outer {
+                    display: flex;
+                    align-items: center;
+
+                    .edit-uploader {
+                        margin-left: 24px;
+                        width: 82px;
+                        height: 36px;
+                        line-height: 34px;
+                        text-align: center;
+                        background: rgba(255, 255, 255, 1);
+
+                        .el-upload {
+                            font-size: 12px;
+                            border-radius: 3px;
+                            color: #333;
+                            border: none;
+                            border: 1px solid rgba(224, 224, 224, 1);
+
+                            &:hover {
+                                color: $a-hover;
+                                border-color: $a-hover;
+                            }
+                        }
+                    }
+                }
+
+
+                .uploader-tips {
+                    margin-top: 8px;
+                    transform-origin: left;
+                    color: #666666;
+                }
+                .uploader-size{
+                    margin-top: 0px;
+                    color: #999999;
+                }
+            }
+        }
+
+        .box-bottom {
+            padding: 0 98px;
+        }
+    }
+}
+
+.team-header {
+    height: 24px !important;
+}
+
+.teamadd-box-car{
+    padding-top:24px !important;
+    // .section-list{
+    //     height: 60px;
+    // }
+    .section-right{
+        margin-left:76px !important;
+        /deep/ .el-textarea{
+            height: 36px !important;
+            /deep/ .el-textarea__inner{
+                width: 304px;
+                height: 36px;
+                overflow: hidden;
+            }
+        }
+        /deep/ .el-input{
+            /deep/ .el-input__inner{
+                width: 304px;
+                height: 36px;
+                overflow: hidden;
+            }
+        }
+        
+    }
+}
+.choose-car-type{
+    width: 80px;
+    height: 36px;
+    position: absolute;
+    top: 221px;
+    left: 623px;
+    font-size: 12px;
+    //z-index: 10;
+}
+.car_company_name_common{
+    /deep/ .el-input__inner{
+        width: 304px;
+    }
+}
+
+.all-checked-word {
+    margin-left: 12px;
+    font-size: 12px;
+    color: #FF6632;
+    line-height: 18px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: rgba(51, 51, 51, 1);
+    line-height: 20px;
+
+    .checkbox-icon {
+        margin-right: 8px;
+        float: left;
+    }
+
+    &.checkbox-all {
+        height: 36px;
+    }
+}
+.auth-outer {
+    width: 640px;
+    padding: 8px 12px 0;
+    max-height: 148px;
+    overflow-y: auto;
+    background: rgba(232, 232, 232, 1);
+    border-radius: 3px;
+
+    .checkbox-item {
+        float: left;
+        padding: 0 24px 8px 0;
+    }
+}
+
+.team-add-no-station {
+    &:hover {
+        background: #e8e8e8;
+    }
+}
+
+.only-i-spe {
+    position: absolute;
+    left: -3px;
+    top: 38px;
+    font-size: 11px;
+    color: #999999;
+    height: 18px;
+    line-height: 18px;
+    //解决谷歌浏览器字体最小12px问题
+    -webkit-transform:scale(0.84);
+}
+.only-i {
+    position: absolute;
+    left: 0;
+    top: 38px;
+    font-size: 11px;
+    color: #999999;
+    height: 18px;
+    line-height: 18px;
+    //解决谷歌浏览器字体最小12px问题
+    -webkit-transform:scale(0.84);
+}
+
+.section-list-24 {
+    margin-bottom: 16px;
+
+}
+.zhe-hang {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+// 解决padding-bottom换不换行的下边距问题
+@media screen and (max-width:1444px) {
+    .zhe-hang {
+        margin-top: 46px;
+    }
+}
+
+.tips-icon {
+    display: inline-block;
+    margin-top: 16px;
+    width: 12px;
+    height: 12px;
+    background: url('../../assets/img/tips-icon.png') no-repeat;
+    background-size: cover;
+    position:relative;
+    top: -132px;
+}
+.pop-blod {
+    font-weight: bold;
+}
+.pop-blod-top {
+    margin-top: 8px;
+}
+
+.listUser-content {
+    padding: 7px 6px 0 12px;
+    min-height: 36px;
+    max-height: 140px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 3px;
+    border: 1px solid rgba(224, 224, 224, 1);
+
+    .listUser-item {
+        float: left;
+        margin: 0 6px 7px 0;
+        padding: 0 4px;
+        height: 20px;
+        background: rgba(238, 238, 238, 1);
+        display: flex;
+        align-items: center;
+        border-radius: 3px;
+        border: 1px solid rgba(224, 224, 224, 1);
+        span {
+            padding-right: 4px;
+            font-size: 12px;
+            color: rgba(51, 51, 51, 1);
+            line-height: 20px;
+        }
+
+        i {
+            display: block;
+        }
+    }
+}
+.coupon-connect-btn{
+    position: relative;
+    .pop-chosse-pile{
+        width: 80px;
+        height: 36px;
+        position: absolute;
+        left: 424px;
+        top: 43px;
+        font-size: 12px;
+    }
+    
+    .if-radio-box{
+        margin-top: 8px;
+    }
+}
+.radio-outer{
+    .el-radio{
+        margin-right: 12px;
+    }
+}
+/deep/ .veh-couponac-box {
+    .box-outer {
+        width: 800px;
+
+        .box-content {
+            padding-top: 0;
+        }
+    }
+}
+
+/deep/ .only-i-bottom {
+    .el-form-item__error {
+        margin-top: 17px;
+    }
+}
+
+.sf-model-box /deep/ .box-outer .box-bottom{
+    padding: 0 202px ;
+}

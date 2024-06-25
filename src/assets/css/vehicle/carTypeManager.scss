@@ -1,0 +1,536 @@
+.section-tips {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    height: 48px;
+    background: rgba(255, 183, 60, 0.15);
+    border-radius: 3px;
+
+    span {
+        padding-left: 12px;
+        font-size: 14px;
+        color: rgba(102, 102, 102, 1);
+        line-height: 24px;
+    }
+}
+
+.section-container {
+    padding: 0 24px 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+
+    .section-main {
+        padding-top: 16px;
+
+        .ad_manager{
+            margin-bottom: 14px;
+            span{
+                width: 246px;
+                height: 17px;
+                font-size: 12px;
+                color: #ff6632;
+                line-height: 17px;
+            }
+        }
+
+        .add-coupon {
+            position: relative;
+            margin-left: 16px;
+            margin-top: 0;
+            float: right;
+            width: auto;
+            padding: 0 16px 0 42px;
+            height: 32px;
+            font-size: 12px;
+            line-height: 32px;
+            i {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                left: 16px;
+                display: block;
+                width: 24px;
+                height: 24px;
+                background: url('../../assets/img/add-station.png') no-repeat;
+                background-size: cover;
+            }
+        }
+        
+
+        .header-content {
+            padding-top: 16px;
+
+            .content-item {
+                float: left;
+                position: relative;
+                padding: 0 40px 24px 0;
+
+                &:last-child {
+                    padding-right: 0;
+                }
+
+                .el-select {
+                    position: relative;
+                    width: 150px;
+
+                    /deep/ .el-input__inner {
+                        height: 32px;
+                        line-height: 30px;
+                    }
+                }
+
+                .header-left {
+                    float: left;
+                    padding-right: 24px;
+                    font-size: 12px;
+                    color: rgba(51, 51, 51, 1);
+                    line-height: 32px;
+                }
+
+                .header-right {
+                    float: left;
+                }
+            }
+        }
+
+        .table {
+            .table-tr {
+                height: 73px;
+            }
+            .table-td {
+                padding: 0 12px;
+            }
+
+            .table-column__1 {
+                flex: 2.76;
+            }
+
+            .table-column__2 {
+                flex: 1.46;
+            }
+
+            .td-item {
+                padding: 16px 5px;
+            }
+
+            .table-link {
+                .td-item {
+                    padding: 16px 0;
+
+                    .item-text {
+                        display: block;
+                        max-height: 144px;
+                        overflow-y: auto;
+                    }
+                }
+
+
+            }
+
+            .table-img {
+                .td-item .news-img {
+                    padding: 0;
+                    width: 234px;
+                    height: 96px;
+                }
+            }
+
+            .table-operate {
+                .td-item {
+                    margin: 0 8px;
+                    padding: 0;
+                }
+            }
+
+            .knob-text {
+                padding-left: 8px;
+            }
+        }
+    }
+}
+
+.vehicle-box {
+    /deep/ .box-outer {
+        width: 592px;
+        padding-top: 16px;
+        .section-list {
+            padding-bottom: 24px;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+
+            .section-left {
+                float: left;
+                font-size: 12px;
+                color: rgba(102, 102, 102, 1);
+                line-height: 36px;
+            }
+
+            .section-right {
+                margin-left: 88px;
+
+                .el-textarea {
+                    width: 400px;
+                    height: 96px;
+                }
+
+                .el-date-editor {
+                    width: 150px;
+                }
+
+                .time-text {
+                    float: left;
+                    padding: 0 12px;
+                    font-size: 12px;
+                    color: rgba(102, 102, 102, 1);
+                    line-height: 36px;
+                }
+
+                &.time-outer {
+                    height: 36px;
+
+                    .el-form-item {
+                        float: left;
+                    }
+                }
+
+                .radio-outer {
+                    display: flex;
+                    height: 36px;
+                    align-items: center;
+
+                    .el-radio {
+                        padding-right: 32px;
+                    }
+                }
+
+                .coverImg,
+                .add-uploader {
+                    width: 301px;
+                    height: 98px;
+                    background-color: #F5F5F5;
+                    border: 1px dashed #E0E0E0;
+                    border-radius: 2px;
+                }
+                .coverImg{
+                    width:299px;
+                }
+                .add-uploader_tan {
+                    width: 74px;
+                    height: 98px;
+                }
+
+                .cover-outer {
+                    display: flex;
+                    align-items: center;
+
+                    .edit-uploader {
+                        margin-left: 24px;
+                        width: 82px;
+                        height: 36px;
+                        line-height: 34px;
+                        text-align: center;
+                        background: rgba(255, 255, 255, 1);
+
+                        .el-upload {
+                            font-size: 12px;
+                            border-radius: 3px;
+                            color: #333;
+                            border: none;
+                            border: 1px solid rgba(224, 224, 224, 1);
+
+                            &:hover {
+                                color: $a-hover;
+                                border-color: $a-hover;
+                            }
+                        }
+                    }
+                }
+
+
+                .uploader-tips {
+                    margin-top: 8px;
+                    transform-origin: left;
+                    color: #666666;
+                }
+                .uploader-size{
+                    margin-top: 0px;
+                    color: #999999;
+                }
+            }
+        }
+
+        .box-bottom {
+            padding: 0 98px;
+        }
+    }
+}
+
+.ad-box {
+    .section-right {
+        margin-left: 96px !important;
+    }
+    .el-select{
+        width: 252px;
+        height: 36px;
+    }
+}
+
+.search-input {
+    /deep/ .el-input__inner {
+        width: 202px;
+        height: 32px;
+        line-height: 30px;
+    }
+}
+.section-header-car {
+    padding: 0 24px;
+    margin-bottom: 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+}
+
+.header-content-car {
+    padding-top: 16px;
+
+    .content-item {
+        float: left;
+        position: relative;
+        padding: 0 40px 24px 0;
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        .el-select {
+            position: relative;
+            width: 150px;
+
+            /deep/ .el-input__inner {
+                height: 32px;
+                line-height: 30px;
+            }
+        }
+
+        .header-left {
+            float: left;
+            padding-right: 24px;
+            font-size: 12px;
+            color: rgba(51, 51, 51, 1);
+            line-height: 32px;
+        }
+
+        .header-right {
+            float: left;
+        }
+    }
+
+}
+.section-container {
+    // margin-top: 24px;
+    // padding: 0 24px 24px;
+    // background: rgba(255, 255, 255, 1);
+    // border-radius: 2px;
+    // border: 1px solid rgba(231, 232, 233, 1);
+
+    .section-item-header {
+        padding: 12px 0;
+
+        span {
+            height: 32px;
+            line-height: 32px;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+        .add-coupon{
+            margin-right: 0 !important;
+        }
+        .add-coupon,
+        .send-btn {
+            position: relative;
+            margin-left: 16px;
+            float: right;
+            width: auto;
+            padding: 0 16px 0 42px;
+            height: 32px;
+            font-size: 12px;
+            line-height: 32px;
+            color: white;
+            .add-station-add {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                left: 16px;
+                display: block;
+                width: 24px;
+                height: 24px;
+                background: url('../../assets/img/add-station.png') no-repeat;
+                background-size: cover;
+            }
+    
+        }
+
+        .send-btn {
+            text-align: center;
+            padding: 0 16px 0 28px;
+            margin-right: 14px !important;
+            &:hover {
+                color: #fff;
+            }
+        }
+
+    }
+
+
+}
+
+
+.coverImg{
+    width: 56px !important;
+    height: 56px !important;
+}
+.add-uploader{
+    width: 56px !important;
+    height: 56px !important;
+}
+.section-left{
+    position: relative;
+    .must-add-car{
+        position: absolute;
+        top: 0;
+        left: -10px;
+        height: 36px;
+        line-height: 36px;
+        display: block;
+        padding-right: 4px;
+        color: #FF6632;
+    }
+}
+.ad-box
+.section-list
+.section-right{
+    margin-left: 72px !important;
+    .logo-car-title{
+        width: 252px;
+        height: 36px;
+    }
+    .logo-car-type{
+        width: 252px !important;
+        height: 76px !important;
+    }
+}
+
+/deep/
+.vehicle-box
+.box-outer{
+    width: 408px;
+}
+/deep/
+.box-main{
+    .box-title{
+        margin-bottom: 24px;
+        margin-top: -16px;
+    }
+    .box-content{
+        padding:0 12px !important;
+    }
+}
+
+/deep/
+.box-bottom{
+    padding: 0 6px !important;
+    margin-top: 24px !important;
+}
+.uploader-size{
+    width: 286px !important;
+}
+
+//批量导入
+.import-process{
+    margin: 24px auto;
+}
+.import-word{
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+}
+//修改el-progress线性进度条的背景色
+.import-process /deep/ .el-progress-bar__outer{
+    background-color: $import-process;
+}
+.import-error{
+    display: flex;
+    justify-content: center;
+    line-height: 24px;
+    font-size: 12px;
+    color: $a-hover;
+    font-weight: bold;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+//批量导入
+.upload-demo{
+    /deep/ .el-button--primary{
+        color: $out-car-word;
+        background-color:transparent;
+        border-color:transparent;
+        height: 32px;
+        line-height:0;
+        margin-left: -8px;
+        position: absolute;
+        left: 30px;
+        top: 0;
+    }
+}
+//批量导入--小问号
+.tips-icon{
+    margin-left:2px;
+    position:absolute;
+    left:110px;
+    top:-5px;
+}
+.import-result-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 72px;
+        height: 72px;
+        margin-bottom: 8px;
+    }
+    p{
+        color: #333333;
+        font-size: 14px;
+    }
+}
+.import-result-word{
+    color: #666666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 24px;
+    margin-top: 12px;
+    .import-common-word{
+        font-size: 12px;
+    }
+    .import-word{
+        font-weight: bold;
+    }
+}
+.import-sure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top:1px solid #E0E0E0;
+    padding-top: 12px !important;
+    margin-top: 12px !important;
+}

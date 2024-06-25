@@ -1,0 +1,198 @@
+// 解决padding-bottom换不换行的下边距问题
+@media screen and (min-width: 1730px) {
+    .content-item{
+        padding-bottom: 0 !important;
+        margin-bottom: 16px;
+    }
+}
+.section-header {
+    padding: 0 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+}
+
+.header-content {
+    max-height: 120px;
+    min-height: 48px;
+    .content-item {
+        float: left;
+        position: relative;
+        padding: 0 40px 24px 0;
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        .el-date-editor {
+            float: left;
+            width: 150px;
+
+            &.end-time {
+                margin-left: 12px;
+            }
+
+            /deep/ .el-input__inner {
+                height: 32px;
+                line-height: 16px;
+            }
+        }
+
+        .el-select {
+            position: relative;
+            width: 150px;
+
+            &.station-name {
+                width: 166px;
+            }
+
+            /deep/ .el-input__inner {
+                height: 32px;
+                line-height: 30px;
+            }
+
+            &.search-type {
+                float: left;
+                width: 100px;
+
+                /deep/ .el-input__inner {
+                    border-right: none;
+                    border-radius: 3px 0 0 3px;
+                }
+            }
+        }
+
+        .search-input {
+            float: left;
+            width: 180px;
+
+            /deep/ .el-input__inner {
+                border-radius: 3px;
+                height: 32px;
+                line-height: 30px;
+            }
+        }
+
+        .header-left {
+            float: left;
+            padding-right: 24px;
+            font-size: 12px;
+            color: rgba(51, 51, 51, 1);
+            line-height: 32px;
+        }
+
+        .header-right {
+            float: left;
+        }
+    }
+
+}
+
+.section-container {
+    padding: 0 24px 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+
+    .section-item-header {
+        padding: 12px 0;
+
+        span {
+            height: 32px;
+            line-height: 32px;
+        }
+    }
+
+    .section-main {
+        padding-top: 16px;
+
+        .table {
+            .td-item {
+                padding: 0 5px;
+            }
+
+            .table-operate {
+                .td-item {
+                    margin: 0 8px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+.el-select-dropdown .el-select-dropdown__item {
+    height: 32px;
+    line-height: 32px;
+}
+
+
+.permission-box {
+    /deep/ .box-outer {
+        width: 592px;
+
+        .box-name {
+            padding: 24px 0 8px;
+            font-size: 12px;
+            font-weight: bold;
+            color:#333;
+            line-height: 20px;
+        }
+
+        .box-main {
+            margin-top: 24px;
+            padding: 8px 12px;
+            overflow-y: auto;
+            font-size: 12px;
+            color: rgba(51, 51, 51, 1);
+            line-height: 20px;
+            height: 216px;
+            background: rgba(232, 232, 232, 1);
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            .permission-top{
+                display: flex;
+                flex-direction: row;
+            }
+            .permission-bottom{
+                margin-top: 8px;
+                display:flex;
+                flex-direction: row;
+                .permission-canuse-station{
+                    flex:78;
+                    font-size: 12px;
+                    color: #666666;
+                    line-height: 20px;
+                }
+                .permission-user-word{
+                    flex: 420;
+                    margin-left: 12px;
+                    font-size: 12px;
+                    color: #333333;
+                    line-height: 20px;
+                }
+            }
+            .permission-list{
+                padding: 8px 0;
+                span:nth-child(1){
+                    font-size: 12px;
+                    color: #666666;
+                    line-height: 20px;
+                }
+                span:nth-child(2){
+                    margin-left: 12px;
+                    font-size: 12px;
+                    color: #333333;
+                    line-height: 20px;
+                }
+            }
+            .permission-left{
+                flex: 1;
+            }
+            .permission-right{
+                flex: 1;
+            }
+        }
+    }
+}

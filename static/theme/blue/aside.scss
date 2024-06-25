@@ -1,0 +1,130 @@
+aside {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  width: 176px;
+  padding: 12px 0 48px;
+  height: calc(100vh - 48px);
+  background: $act-aside;
+  z-index: 2001;
+  overflow-y: auto;
+
+  .aside-list {
+    position: relative;
+
+    .aside-top {
+      position: relative;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      height: 64px;
+      background-color: $act-aside;
+
+      &:hover {
+        background: $act-aside-list;
+
+        // .top-text {
+        //     color: #fff;
+        // }
+      }
+
+      .top-icon {
+        display: block;
+        width: 24px;
+        height: 24px;
+      }
+
+      .top-text {
+        padding-left: 4px;
+        font-size: 14px;
+        color: rgba(250, 250, 250, 0.6);
+        line-height: 24px;
+        user-select: none;
+      }
+
+      .top-arrow {
+        position: absolute;
+        display: block;
+        top: 26px;
+        right: 24px;
+        content: '';
+        border: 4px solid transparent;
+        border-bottom-color: rgba(255, 255, 255, 0.6);
+        transform-origin: 50% 75%;
+        transition: transform 0.2s ease-in;
+
+        &.top-arrow-open {
+          transform: rotateZ(-180deg);
+        }
+      }
+    }
+
+    .aside-main {
+      padding-bottom: 8px;
+
+      .aside-item {
+        display: block;
+        font-size: 14px;
+        padding-left: 48px;
+        color: rgba(255, 255, 255, 0.6);
+        height: 42px;
+        line-height: 42px;
+        user-select: none;
+        cursor: pointer;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+
+    &.aside-hover-act {
+      .aside-top {
+        background: $act-aside-list;
+      }
+
+      // .aside-top,
+      // .aside-top:hover,
+      .aside-main {
+        background: rgba(0, 0, 0, 0.25);
+      }
+
+      .top-text {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      .top-arrow {
+        border-bottom-color: rgba(255, 255, 255, 0.6);
+      }
+    }
+
+    &.aside-act {
+      .aside-top {
+        background: $act-aside-list;
+      }
+
+      .top-text {
+        color: #fff;
+      }
+
+      .top-arrow {
+        border-bottom-color: #fff;
+      }
+
+      // .aside-top,
+      // .aside-top:hover,
+      .aside-main {
+        background: rgba(0, 0, 0, 0.25);
+
+        .top-text {
+          color: #fff;
+        }
+
+        .top-arrow {
+          border-bottom-color: #fff;
+        }
+      }
+    }
+  }
+}

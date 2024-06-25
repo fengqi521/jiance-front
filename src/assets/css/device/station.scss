@@ -1,0 +1,130 @@
+.section-header {
+    padding: 0 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+}
+
+.header-content {
+    padding-top: 16px;
+
+    .content-item {
+        float: left;
+        position: relative;
+        padding: 0 40px 24px 0;
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        .el-select {
+            position: relative;
+            width: 150px;
+
+            /deep/ .el-input__inner {
+                height: 32px;
+                line-height: 30px;
+            }
+
+            &.search-type {
+                float: left;
+                width: 100px;
+
+                /deep/ .el-input__inner {
+                    border-right: none;
+                    border-radius: 3px 0 0 3px;
+                }
+            }
+        }
+
+        .search-input {
+            float: left;
+            width: 180px;
+
+            /deep/ .el-input__inner {
+                border-radius: 0 3px 3px 0;
+                height: 32px;
+                line-height: 30px;
+            }
+        }
+
+        .header-left {
+            float: left;
+            padding-right: 24px;
+            font-size: 12px;
+            color: rgba(51, 51, 51, 1);
+            line-height: 32px;
+        }
+
+        .header-right {
+            float: left;
+        }
+    }
+
+}
+
+.section-container {
+    margin-top: 24px;
+    padding: 0 24px 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+
+    .section-item-header {
+        padding: 12px 0;
+
+        span {
+            height: 32px;
+            line-height: 32px;
+        }
+    }
+
+    .add-station {
+        position: relative;
+        float: right;
+        width: 118px;
+        padding-left: 42px;
+        height: 32px;
+        line-height: 32px;
+        text-align: left;
+        font-size: 12px;
+
+        img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 16px;
+            display: block;
+            width: 24px;
+            height: 24px;
+        }
+
+        &:hover{
+            color: #fff;
+        }
+    }
+
+    .section-main {
+        padding-top: 16px;
+
+        .table {
+            .table-name {
+                .td-item {
+                    padding: 0 5px;
+                }
+            }
+
+            .table-operate {
+                .td-item {
+                    margin: 0 8px;
+                }
+            }
+        }
+    }
+}
+
+.el-select-dropdown .el-select-dropdown__item {
+    height: 32px;
+    line-height: 32px;
+}

@@ -1,0 +1,226 @@
+.section-container {
+    padding: 0 24px 32px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+
+    .section-info {
+        padding-top: 24px;
+
+        .info-main {
+            border-radius: 3px;
+            border: 1px solid rgba(224, 224, 224, 1);
+
+            .info-title {
+                padding: 12px 24px;
+                font-size: 14px;
+
+                font-weight: bold;
+                color: rgba(51, 51, 51, 1);
+                line-height: 24px;
+                height: 48px;
+                background: rgba(238, 238, 238, 1);
+                border-radius: 3px 3px 0 0;
+            }
+
+            .info-content {
+                display: flex;
+                .info-left {
+                    float: left;
+                    padding: 24px 0 0 24px;
+                }
+
+                .info-right {
+                    float: left;
+                    padding: 24px 0 0 48px;
+
+                    .info-item {
+                        .info-item-left {
+                            max-width: 115px;
+                        }
+
+                        .info-item-right {
+                            margin-left: 103px;
+                        }
+                    }
+                }
+
+                .info-item {
+                    padding-bottom: 24px;
+
+                    .info-item-left {
+                        position: relative;
+                        float: left;
+                        max-width: 86px;
+                        padding: 0 10px;
+                        font-size: 12px;
+                        color: #333;
+                        line-height: 36px;
+
+                        i {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 36px;
+                            line-height: 36px;
+                            display: block;
+                            padding-right: 4px;
+                            color: #FF6632;
+                        }
+
+                        &.show-app {
+                            line-height: 20px;
+
+                            i {
+                                line-height: 20px;
+                            }
+                        }
+                    }
+
+                    /deep/.input-150 {
+
+                        .el-input {
+                            width: 150px !important;
+                        }
+                        
+                    }
+
+                    .info-item-right {
+                        margin-left: 86px;
+
+                        &.voltage-outer {
+                            height: 36px;
+                            display: flex;
+                        }
+                        .el-form-item__content{
+                            width: 304px;
+                        }
+
+                        .el-input,
+                        .el-select {
+                            width: 304px;
+                        }
+
+                        .voltage-item {
+                            display: flex;
+                            width: 148px;
+                            // float: left;
+                            padding-right: 24px;
+
+                            .el-input {
+                                float: left;
+                                width: 96px;
+                            }
+
+                            /deep/ .el-form-item {
+                                width: 148px;
+                            }
+                        }
+
+                        .voltage-unit {
+                            display: inline;
+                            padding-left: 8px;
+                            font-size: 12px;
+                            color: rgba(102, 102, 102, 1);
+                            line-height: 36px;
+                        }
+
+                        .radio-outer {
+                            display: flex;
+                            height: 36px;
+                            align-items: center;
+                        }
+
+                        .el-radio {
+                            float: left;
+                            display: block;
+                            padding-right: 32px;
+                        }
+
+                        .operate-btn {
+                            width: 80px;
+                            font-size: 12px;
+                            display: inline-flex;
+                            margin-left: 24px;
+                            justify-content: center;
+                            float: none;
+                        }
+
+                        .open-listUser {
+                            padding-top: 6px;
+                            width: 528px;
+
+                            .listUser-main {
+                                position: relative;
+                                padding: 12px;
+                                padding-bottom: 20px;
+                                border-radius: 2px;
+                                background: #E8E8E8;
+                                .el-input--small{
+                                    position: absolute !important;
+                                }
+                                &:after {
+                                    position: absolute;
+                                    display: block;
+                                    content: '';
+                                    left: 134px;
+                                    top: -12px;
+                                    border: 6px solid transparent;
+                                    border-bottom-color: #E8E8E8;
+                                }
+
+                                .listUser-btn {
+                                    position: absolute;
+                                    display: block;
+                                    top: 12px;
+                                    right: 12px;
+                                }
+
+                                .listUser-content {
+                                    
+                                    width: 400px;
+                                    padding: 7px 6px 0 12px;
+                                    min-height: 36px;
+                                    max-height: 140px;
+                                    overflow-y: auto;
+                                    background: rgba(255, 255, 255, 1);
+                                    border-radius: 3px;
+                                    border: 1px solid rgba(224, 224, 224, 1);
+
+                                    .listUser-item {
+                                        float: left;
+                                        margin: 0 6px 7px 0;
+                                        padding: 0 4px;
+                                        height: 20px;
+                                        background: rgba(238, 238, 238, 1);
+                                        display: flex;
+                                        align-items: center;
+                                        border-radius: 3px;
+                                        border: 1px solid rgba(224, 224, 224, 1);
+
+                                        span {
+                                            padding-right: 4px;
+                                            font-size: 12px;
+                                            color: rgba(51, 51, 51, 1);
+                                            line-height: 20px;
+                                        }
+
+                                        i {
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .section-bottom {
+        float: none;
+        margin: 40px auto 0;
+    }
+}

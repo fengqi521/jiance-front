@@ -1,0 +1,92 @@
+.table {
+    .table-th {
+        display: flex;
+        height: 48px;
+        font-size: 12px;
+        color: #2c393b;
+        line-height: 20px;
+        border-radius: 4px 4px 0px 0px;
+
+        .table-td {
+            flex: 1;
+            background: #eeeeee;
+            border-right: 2px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            &:last-child {
+                border-right: none;
+            }
+
+            .tips-icon {
+                margin-left: 4px;
+                margin-top: -10px;
+                width: 12px;
+                height: 12px;
+                background: url("../img/tips-icon.png") no-repeat;
+                background-size: cover;
+                z-index: 11;
+            }
+        }
+    }
+}
+
+.table-tr,
+.table .table-body .table-tr,
+.table .table-body .table-tr-inner {
+    display: flex;
+    height: 72px;
+    font-size: 12px;
+    color: #666666;
+    line-height: 18px;
+    border-bottom: 1px solid #eeeff1;
+
+    &.unData {
+        font-size: 14px;
+        justify-content: center;
+        align-items: center;
+        color: #999990;
+
+        img {
+            margin-right: 8px;
+            width: 20px;
+            height: 20px;
+        }
+
+        &:hover {
+            background: transparent;
+        }
+    }
+
+    &:hover {
+        background: #f8f8f8;
+    }
+
+    .table-td {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border-right: 2px solid transparent;
+
+        &:last-child {
+            border-right: none;
+        }
+
+        .td-item {
+            text-align: center;
+            word-break: break-all;
+
+            &.td-time {
+                padding: 0;
+                word-break: normal;
+            }
+        }
+    }
+}
+
+.knob-text {
+    padding-left: 8px;
+}

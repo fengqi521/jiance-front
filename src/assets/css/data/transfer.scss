@@ -1,0 +1,420 @@
+.section-list {
+  position: relative;
+  margin-bottom: 24px;
+  padding: 0 24px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 2px;
+  border: 1px solid rgba(231, 232, 233, 1);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .section-main {
+    padding-bottom: 24px;
+
+    .main-right {
+      margin-left: 160px;
+
+      .el-form {
+        padding-top: 24px;
+
+        .main-right-list {
+          float: left;
+          margin-left: 48px;
+          padding-bottom: 24px;
+
+          .list-left {
+            float: left;
+            font-size: 12px;
+            color: rgba(102, 102, 102, 1);
+            line-height: 20px;
+            max-width: 82px;
+            padding-left: 10px;
+            position: relative;
+
+            i {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 36px;
+              line-height: 20px;
+              display: block;
+              padding-right: 4px;
+              color: #ff6632;
+            }
+
+            &.long-desc {
+              line-height: 20px;
+            }
+          }
+
+          .radio-different {
+            /deep/ .el-radio__label {
+              line-height: 0;
+            }
+          }
+
+          .account-type-1 {
+            height: 46px;
+          }
+
+          .account-type-2 {
+            height: 46px;
+          }
+
+          .list-right {
+            margin-left: 82px;
+
+            .discount {
+              font-size: 12px;
+              color: #333333;
+              line-height: 20px;
+              margin: 0 24px 0 8px;
+            }
+
+            .unit {
+              font-size: 12px;
+              color: #666666;
+              line-height: 20px;
+              margin-left: 8px;
+              position: relative;
+            }
+
+            /deep/ .upload-demo {
+              width: 240px;
+
+              .el-upload {
+                text-align: left;
+
+                .el-button--primary {
+                  background: transparent;
+                  border-color: #e0e0e0;
+
+                  span {
+                    font-size: 12px;
+                    color: #333333;
+                    line-height: 20px;
+                  }
+
+                  .el-upload__tip {
+                    font-size: 12px;
+                    color: #999999;
+                    line-height: 20px;
+                  }
+                }
+
+                .el-button:hover {
+                  background: transparent;
+                  border-color: $origin-company-button;
+
+                  span {
+                    font-size: 12px;
+                    color: $origin-company-button;
+                    line-height: 20px;
+                  }
+                }
+              }
+
+              .el-icon-document {
+                content: '';
+              }
+
+              .el-upload-list__item {
+                position: relative;
+              }
+
+              .el-upload-list__item-name {
+                margin-left: 10px;
+                font-size: 12px;
+                color: #333;
+                line-height: 20px;
+
+                &:hover {
+                  font-size: 12px;
+                  color: #333;
+                  line-height: 20px;
+                }
+              }
+
+              // .el-icon-document::before {
+              //     content:"";
+              //     background: url('../../assets/img/pin.png') no-repeat;
+              //     background-size: 16px 16px;
+              //     width:16px;
+              //     height:16px;
+              //     position:absolute;
+              //     left:0;
+              //     top:16%;
+              // }
+
+              .el-icon-upload-success::before {
+                content: '';
+              }
+            }
+
+            .radio-content-1 {
+              position: relative;
+              pointer-events: none;
+              top: -40px;
+
+              img {
+                position: relative;
+                top: 5px;
+                left: 23px;
+                width: 10px;
+                height: 6px;
+              }
+
+              .content {
+                width: 528px;
+                padding: 12px;
+                background: #e8e8e8;
+                font-size: 12px;
+                color: #333333;
+                line-height: 20px;
+
+                .title {
+                  font-weight: bold;
+                  margin-top: 8px;
+                }
+              }
+            }
+
+            .radio-content-2 {
+              position: relative;
+              pointer-events: none; ////鼠标穿透这一层直接去点击下一层
+              top: -40px;
+
+              img {
+                position: relative;
+                top: 5px;
+                left: 111px;
+                width: 10px;
+                height: 6px;
+              }
+
+              .content {
+                width: 528px;
+                padding: 12px;
+                background: #e8e8e8;
+                font-size: 12px;
+                color: #333333;
+                line-height: 20px;
+              }
+            }
+
+            .radio-content-3 {
+              position: relative;
+              top: -40px;
+
+              img {
+                position: relative;
+                top: 5px;
+                left: 23px;
+                width: 10px;
+                height: 6px;
+              }
+
+              .content {
+                width: 528px;
+                padding: 12px;
+                background: #e8e8e8;
+                font-size: 12px;
+                color: #333333;
+                line-height: 20px;
+              }
+            }
+
+            .radio-outer {
+              display: flex;
+              flex-direction: row;
+
+              .radio-img {
+                width: 32px;
+                height: 32px;
+              }
+            }
+
+            &.system-list-right {
+              margin-left: 96px;
+            }
+
+            &.operate-list-right {
+              margin-left: 72px;
+            }
+
+            .el-input,
+            .el-select {
+              width: 304px;
+            }
+
+            .el-radio {
+              padding-right: 32px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+            }
+
+            .edit-icon {
+              float: left;
+              margin: 8px 0 0 12px;
+              display: block;
+            }
+
+            .operator_url {
+              width: 528px;
+              height: 96px;
+
+              /deep/ .el-input__inner {
+                width: 528px;
+                height: 96px;
+              }
+            }
+          }
+
+          /deep/ .list-right-short {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+
+            .el-input,
+            .el-input__inner {
+              width: 96px;
+              height: 36px;
+            }
+
+            .only-short {
+              .el-form-item__error {
+                position: absolute;
+                top: 52px;
+              }
+            }
+          }
+        }
+      }
+
+      .main-right-bottom {
+        padding: 0 0 0 130px;
+
+        &.system-right-bottom {
+          padding-left: 144px;
+        }
+      }
+    }
+  }
+
+  &.section-company .section-main .main-right {
+    margin-left: 0;
+
+    .company-left,
+    .company-right {
+      float: left;
+      padding-right: 48px;
+    }
+
+    .main-right-different {
+      margin-bottom: 12px !important;
+    }
+
+    .main-right-list {
+      margin: 0;
+      float: none;
+
+      .list-right,
+      .list-right.operate-list-right {
+        float: none;
+        margin-left: 98px;
+
+        .el-textarea {
+          height: 96px;
+        }
+
+        .el-form-item {
+          float: none;
+        }
+      }
+    }
+
+    .main-right-bottom {
+      padding-left: 100px;
+    }
+  }
+}
+
+.card-form {
+  width: 626px;
+
+  &-list {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  &-charge {
+    width: 640px;
+
+    .card-form-unit {
+      font-size: 12px;
+      color: #666;
+      align-self: center;
+      margin-left: 4px;
+    }
+  }
+
+  &-label {
+    width: 82px;
+    margin-right: 16px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #ff6632;
+
+    span {
+      display: inline-block;
+      width: calc(100% - 10px);
+      vertical-align: top;
+      color: #666;
+      padding-left: 4px;
+    }
+  }
+
+  .scrollBar {
+    height: 96px;
+  }
+
+  .el-form-item {
+    flex: 1;
+  }
+}
+
+.only-i {
+  position: absolute;
+  left: -32px;
+  top: 38px;
+  font-size: 11px;
+  color: #999999;
+  height: 18px;
+  line-height: 18px;
+  //解决谷歌浏览器字体最小12px问题
+  -webkit-transform: scale(0.84);
+}
+
+.tips-icon {
+  display: inline-block;
+  margin-top: 4px;
+  width: 12px;
+  height: 12px;
+  background: url('../../assets/img/tips-icon.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: -15px;
+}
+
+.knob-text {
+  padding-left: 8px;
+  font-size: 12px;
+  color: #666666;
+  line-height: 18px;
+}

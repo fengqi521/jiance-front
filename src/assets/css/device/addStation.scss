@@ -1,0 +1,546 @@
+.section-container {
+  padding: 0 24px 32px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 2px;
+  border: 1px solid rgba(231, 232, 233, 1);
+
+  .section-info {
+    padding-top: 24px;
+
+    .info-header {
+      margin-bottom: 16px;
+      width: 96px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 14px;
+      color: #fff;
+      text-align: center;
+      border-radius: 1px;
+    }
+
+    .info-main {
+      border-radius: 3px;
+      border: 1px solid rgba(224, 224, 224, 1);
+
+      .info-title {
+        padding: 12px 24px;
+        font-size: 14px;
+
+        font-weight: bold;
+        color: rgba(51, 51, 51, 1);
+        line-height: 24px;
+        height: 48px;
+        background: rgba(238, 238, 238, 1);
+        border-radius: 3px 3px 0 0;
+      }
+
+      .info-content {
+        .info-left {
+          float: left;
+          padding: 24px 0 0 24px;
+        }
+
+        .info-right {
+          float: left;
+          padding: 24px 0 0 48px;
+        }
+
+        .info-item {
+          padding-bottom: 24px;
+
+          .info-item-left {
+            position: relative;
+            float: left;
+            max-width: 86px;
+            padding: 0 10px;
+            font-size: 12px;
+            color: #333;
+            line-height: 36px;
+
+            i {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 36px;
+              line-height: 36px;
+              display: block;
+              padding-right: 4px;
+              color: #ff6632;
+            }
+
+            &.show-app {
+              line-height: 20px;
+
+              i {
+                line-height: 20px;
+              }
+            }
+          }
+          .uploader-detail,
+          .uploader-tips {
+            margin-left: 70px;
+          }
+          .uploader-detail {
+            margin-top: 4px;
+          }
+          .info-item-right {
+            margin-left: 86px;
+
+            .el-input,
+            .el-select {
+              width: 304px;
+            }
+
+            .el-textarea {
+              width: 320px;
+              height: 96px;
+            }
+            .station-position {
+              width: 200px;
+            }
+            .station-position-button {
+              width: 86px;
+              font-size: 12px;
+              color: #333;
+              background: rgba(255, 255, 255, 1);
+              border: 1px solid #e0e0e0;
+            }
+            .radio-outer {
+              display: flex;
+              height: 36px;
+              align-items: center;
+            }
+
+            &.province-item {
+              height: 36px;
+
+              .el-form-item {
+                margin-right: 8px;
+                float: left;
+
+                &:last-child {
+                  margin-right: 0;
+                }
+
+                .el-select,
+                .el-input {
+                  width: 96px;
+                }
+              }
+            }
+
+            .main-first {
+              height: 60px !important;
+            }
+            .interval-main {
+              position: relative;
+              margin-top: 6px;
+              padding: 12px;
+              height: 108px;
+              width: 528px;
+              border-radius: 3px;
+              background: #e8e8e8;
+
+              &:after {
+                position: absolute;
+                display: block;
+                content: '';
+                left: 12px;
+                top: -12px;
+                border: 6px solid transparent;
+                border-bottom-color: #e8e8e8;
+              }
+              .support_order_frequency {
+                // margin-top: 10px;
+                float: left;
+                font-size: 12px;
+                color: #333;
+
+                .frequency_world {
+                  height: 36px;
+                  line-height: 36px;
+                  float: left;
+                }
+                .frequency_first {
+                  width: 50px;
+                  float: left;
+                  margin-right: 10px;
+                }
+                .el-input,
+                .el-input--small {
+                  width: 50px;
+                  margin: 0 5px;
+                }
+              }
+            }
+
+            .park-main {
+              top: 4px;
+              height: auto;
+              .park-item {
+                margin-bottom: 24px;
+                font-size: 12px;
+                color: #333;
+              }
+              .el-form-item {
+                display: inline-block;
+                width: 72px;
+                .el-input {
+                  width: auto;
+                }
+              }
+              .park-textarea {
+                width: 100%;
+                height: 116px;
+
+                &:after {
+                  left: 32px;
+                }
+              }
+            }
+
+            .el-radio {
+              float: left;
+              display: block;
+              padding-right: 32px;
+            }
+
+            .cover-uploader,
+            .nav-uploader {
+              width: 202px;
+              border: 1px dashed #e0e0e0;
+              background-color: #f5f5f5;
+            }
+            .cover-uploader {
+              height: 202px;
+            }
+
+            .nav-uploader {
+              height: 72px;
+            }
+
+            .edit-uploader {
+              position: absolute;
+              top: 82px;
+              left: 224px;
+              width: 82px;
+              height: 36px;
+              line-height: 34px;
+              text-align: center;
+              background: rgba(255, 255, 255, 1);
+              font-size: 12px;
+              border-radius: 3px;
+              color: #333;
+              border: 1px solid rgba(224, 224, 224, 1);
+              &:hover {
+                color: $a-hover;
+                border-color: $a-hover;
+              }
+            }
+            .nav-uploader {
+              .edit-uploader {
+                top: 19px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-bottom {
+    float: none;
+    margin: 40px auto 0;
+  }
+}
+
+// 时间段
+.interval-list {
+  float: left;
+
+  &.interval-text {
+    padding: 0 24px;
+    font-size: 12px;
+    color: rgba(51, 51, 51, 1);
+    line-height: 36px;
+  }
+
+  .interval-item {
+    float: left;
+
+    &:first-child {
+      margin-right: 8px;
+    }
+
+    .el-select {
+      float: left;
+      width: 72px !important;
+
+      /deep/ .el-input__inner {
+        padding: 0 16px;
+        border-radius: 3px 0 0 3px;
+      }
+    }
+
+    .unit {
+      float: left;
+      width: 32px;
+      height: 36px;
+      text-align: center;
+      line-height: 34px;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 0px 3px 3px 0px;
+      font-size: 12px;
+      color: #333;
+      border: 1px solid rgba(220, 220, 220, 1);
+      border-left: none;
+    }
+  }
+}
+
+// 充电费率
+.rate-container {
+  padding: 16px 24px;
+
+  .chargeRate-tips {
+    margin: 16px 0;
+    height: 76px;
+    background: rgba(255, 183, 60, 0.15);
+    border-radius: 3px;
+
+    .chargeRate-tips-left {
+      float: left;
+      padding-top: 14px;
+      width: 60px;
+
+      .warning-icon {
+        margin: 0 auto;
+      }
+    }
+
+    .chargeRate-tips-right {
+      margin-left: 60px;
+      padding-top: 8px;
+
+      p {
+        font-size: 12px;
+        font-weight: normal;
+        color: rgba(102, 102, 102, 1);
+        line-height: 20px;
+
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .info-content {
+    // border: 1px solid rgba(224, 224, 224, 1);
+    border-radius: 3px;
+  }
+
+  .rate-radio {
+    margin-bottom: 16px;
+  }
+
+  .rate-radio-label {
+    margin-right: 10px;
+    font-size: 12px;
+    color: #333;
+  }
+
+  .el-radio {
+    margin-right: 20px;
+  }
+
+  .charge-form {
+    padding-top: 24px;
+    border: 1px solid rgba(224, 224, 224, 1);
+    border-radius: 3px;
+  }
+
+  .chargeRate-container {
+    padding: 0 16px;
+
+    .chargeRate-main {
+      margin-bottom: 24px;
+      border-radius: 3px;
+      border: 1px solid rgba(224, 224, 224, 1);
+
+      .info-title {
+        .rate-arrow {
+          float: right;
+          display: block;
+          width: 24px;
+          height: 24px;
+          background: url('../../assets/img/rate-icon.png') no-repeat;
+          background-size: cover;
+          transform-origin: center;
+          transition: transform 0.2s linear;
+          cursor: pointer;
+
+          &.rate-arrow-open {
+            transform: rotateZ(180deg);
+          }
+        }
+      }
+
+      .info-content {
+        width: 100%;
+
+        div,
+        span {
+          user-select: none;
+        }
+
+        .interval-btn {
+          float: left;
+          padding-left: 24px;
+
+          div {
+            margin-right: 16px;
+            font-size: 12px;
+
+            &.add-interval {
+              width: 80px;
+            }
+
+            &.del-interval {
+              width: 56px;
+            }
+          }
+        }
+
+        .chargeRate-header {
+          padding: 24px;
+
+          .header-item {
+            float: left;
+
+            &.last-child {
+              padding-left: 32px;
+            }
+
+            .header-item-left {
+              padding-right: 16px;
+              float: left;
+              font-size: 12px;
+              color: rgba(51, 51, 51, 1);
+              line-height: 36px;
+            }
+
+            .header-item-right {
+              float: left;
+
+              .el-input {
+                float: left;
+                width: 100px;
+
+                /deep/ .el-input__inner {
+                  border-radius: 3px 0 0 3px;
+                }
+              }
+
+              .unit {
+                float: left;
+                width: 64px;
+                height: 36px;
+                text-align: center;
+                line-height: 36px;
+                background: rgba(255, 255, 255, 1);
+                border-radius: 0px 3px 3px 0px;
+                font-size: 12px;
+                color: #333;
+                border: 1px solid rgba(220, 220, 220, 1);
+                border-left: none;
+              }
+            }
+          }
+        }
+
+        .chargeRate-content {
+          margin: 0 24px;
+          transition: all 0s;
+          border-bottom: 1px dashed #ccc;
+
+          .chargeRate-content-left {
+            float: left;
+            font-size: 12px;
+            color: rgba(51, 51, 51, 1);
+            line-height: 36px;
+          }
+
+          .chargeRate-content-right {
+            margin-left: 52px;
+
+            .chargeRate-list {
+              padding-bottom: 24px;
+              height: 60px;
+            }
+          }
+        }
+      }
+
+      .charge-wrapper {
+        border: none;
+      }
+
+      .empty-btn {
+        float: none;
+        margin: 54px auto;
+      }
+
+      .info-content:last-child .chargeRate-content {
+        border: none;
+      }
+    }
+  }
+}
+
+/deep/ .el-form .el-form-item__error {
+  width: 304px;
+}
+
+/deep/.four-select-input {
+  position: absolute;
+  z-index: 7;
+
+  .el-select-dropdown {
+    display: none;
+  }
+}
+
+/deep/.four-select-box {
+  .el-scrollbar {
+    display: block !important;
+  }
+  .el-select-dropdown {
+    position: absolute;
+    left: 0 !important;
+  }
+}
+
+.four-select {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  display: flex;
+  margin: -8px 0 8px;
+  & > div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333333;
+    line-height: 32px;
+    background: #eeeeee;
+    cursor: pointer;
+  }
+
+  .select-checked {
+    background: #fff;
+  }
+}

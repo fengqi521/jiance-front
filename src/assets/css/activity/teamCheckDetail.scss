@@ -1,0 +1,176 @@
+.section-name {
+    padding-bottom: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(102, 102, 102, 1);
+    line-height: 20px;
+}
+
+.section-header {
+    padding: 0 24px 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+    
+}
+
+.section-container {
+    padding: 0 24px 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+
+    .header-content {
+
+        margin-top: 24px;
+        .content-top {
+            height: 100%;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 3px;
+            border: 1px solid rgba(224, 224, 224, 1);
+            display: flex;
+            align-items: center;
+
+            .top-item {
+                position: relative;
+                flex: 1;
+                padding: 0 5px 0 24px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .top-item-tr {
+                    padding-bottom: 12px;
+                    display: flex;
+                    align-items: center;
+
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+
+                    .top-item-title {
+                        padding-bottom: 0;
+                    }
+
+                    .top-item-text {
+                        padding-left: 12px;
+                        font-size: 20px;
+                    }
+                }
+
+                &:after {
+                    position: absolute;
+                    display: block;
+                    content: '';
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    right: 0;
+                    width: 1px;
+                    height: 48px;
+                    background-color: #E7E8E9;
+                }
+
+                &:last-child:after {
+                    display: none;
+                }
+
+                .top-item-title {
+                    padding-bottom: 8px;
+                    font-size: 12px;
+                    color: rgba(102, 102, 102, 1);
+                    line-height: 24px;
+                }
+
+                .top-item-text {
+                    font-size: 24px;
+
+                    font-weight: bold;
+                    color: #999;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    .section-item-header span {
+        float: none;
+    }
+
+    .section-main {
+        
+        .header-content {
+            
+            margin-bottom: 24px;
+            height: 114px;
+
+        }
+
+        .table {
+            .td-item {
+                padding: 0 5px;
+            }
+
+            .table-td {
+                flex: 2.65;
+
+                &.table-column__1 {
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
+
+.add-coupon{
+    float: right;
+    span {
+        height: 32px;
+        line-height: 32px;
+    }
+    a:hover{
+        color: #fff;
+    }
+    .add-coupon,
+    .send-btn {
+        position: relative;
+        margin-left: 16px;
+        margin-bottom: 16px;
+        float: right;
+        width: auto;
+        padding: 0 16px 0 42px;
+        height: 32px;
+        font-size: 12px;
+        line-height: 32px;
+
+        i {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 16px;
+            display: block;
+            width: 24px;
+            height: 24px;
+            background: url('../../assets/img/add-station.png') no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .send-btn {
+        text-align: center;
+        padding: 0 16px;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.el-select-dropdown .el-select-dropdown__item {
+    height: 32px;
+    line-height: 32px;
+}
+.knob-text{
+    margin-left:8px;
+}

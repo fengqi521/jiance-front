@@ -1,0 +1,156 @@
+.section-list {
+  padding: 0 24px 24px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 2px;
+  border: 1px solid rgba(231, 232, 233, 1);
+
+  .header-main {
+    padding-top: 8px;
+
+    .header-amount {
+      margin-top: 16px;
+      height: 144px;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 3px;
+      border: 1px solid rgba(224, 224, 224, 1);
+      display: flex;
+      align-items: center;
+
+      .top-item {
+        position: relative;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 5px 0 24px;
+
+        &:not(:nth-child(3)):after {
+          position: absolute;
+          display: block;
+          content: '';
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          right: 0;
+          width: 1px;
+          height: 86px;
+          background-color: #e7e8e9;
+        }
+
+        .top-item-title {
+          padding-bottom: 12px;
+          font-size: 14px;
+          color: #666666;
+          line-height: 24px;
+        }
+
+        .top-item-text {
+          font-weight: bold;
+          font-size: 28px;
+          color: #666666;
+          line-height: 32px;
+          margin-bottom: 8px;
+        }
+
+        .top-a {
+          font-size: 12px;
+          line-height: 20px;
+        }
+
+        .top-item-tr {
+          padding-bottom: 10px;
+          display: flex;
+          align-items: center;
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+
+          .top-item-title {
+            font-size: 12px;
+            padding-bottom: 0;
+          }
+
+          .top-item-text {
+            padding-left: 12px;
+          }
+        }
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .header-box {
+      padding: 12px 24px;
+      background-color: #f3f3f3;
+      margin-top: 16px;
+    }
+
+    .header-content {
+      &:first-child {
+        margin-bottom: 16px;
+      }
+
+      .content-item {
+        float: left;
+        display: flex;
+        width: 25%;
+        font-size: 12px;
+        color: rgba(51, 51, 51, 1);
+        line-height: 32px;
+
+        span:first-child {
+          padding-right: 12px;
+          float: left;
+          color: #666;
+          min-width: 72px;
+        }
+
+        span:last-child {
+          overflow: hidden;
+          word-break: break-all;
+          word-wrap: break-word;
+          line-height: 32px;
+        }
+
+        img {
+          display: inline-block;
+          margin-right: 12px;
+          width: 32px;
+          height: 32px;
+        }
+      }
+
+      &.header-content__1 {
+        height: 165px;
+
+        .content-item {
+          float: none;
+          width: 100%;
+        }
+      }
+    }
+
+    .bank-container {
+      margin: 24px 0;
+    }
+
+    .bank-container .bank-header {
+      font-size: 14px;
+      color: #333;
+      line-height: 32px;
+    }
+  }
+
+  .add-coupon {
+    position: relative;
+    float: right;
+    width: auto;
+    padding: 0 16px 0 16px;
+    height: 32px;
+    font-size: 12px;
+    line-height: 32px;
+  }
+}

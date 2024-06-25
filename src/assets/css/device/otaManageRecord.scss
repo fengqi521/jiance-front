@@ -1,0 +1,29 @@
+.section-header {
+  padding: 0 24px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 2px;
+  border: 1px solid rgba(231, 232, 233, 1);
+}
+
+.section-container {
+  padding: 0 24px 24px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 2px;
+  border: 1px solid rgba(231, 232, 233, 1);
+
+  .section-main {
+    padding-top: 16px;
+
+    .table {
+      .td-item {
+        padding: 0 2px;
+      }
+
+      .table-column__1 {
+        flex: 1.4;
+      }
+    }
+  }
+}
+
+

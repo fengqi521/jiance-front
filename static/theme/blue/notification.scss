@@ -1,0 +1,142 @@
+.sf-notification {
+    min-width: 424px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: $notice-success-background;
+    border-radius: 0px 4px 4px 0px;
+    position: fixed;
+    right: 32px;
+    transition: opacity .3s, transform .3s, right .3s, top .4s;
+    overflow: hidden;
+    padding: 12px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 20000;
+}
+.sf-notification.h5_style{
+    min-width: 250px;
+    right: 50%;
+    margin-right: -125px;
+}
+.sf-notification:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 2px;
+}
+
+.notify-icon {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    background: url('img/success-icon.png') no-repeat;
+    background-size: cover;
+}
+
+.sf-notification__content {
+    padding-left: 12px;
+    font-size: 14px;
+    color: $notice-success;
+    line-height: 24px;
+}
+
+.sf-icon-close {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+}
+
+.sf-notification-fade-enter {
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    right: 0
+}
+
+.sf-notification-fade-leave-active {
+    opacity: 0;
+}
+
+/* 成功css */
+.sf-notification--success {
+    background: $notice-success-background;
+}
+.sf-notification--success .sf-notification__content {
+    color: $notice-success;
+}
+
+.sf-notification.sf-notification--success:after {
+    background-color: $notice-success-after;
+}
+
+.sf-notification--success .notify-icon {
+    background: url('img/success-icon.png') no-repeat;
+    background-size: cover;
+}
+
+/* 警告 css */
+.sf-notification--warning {
+    background: $notice-warning-background;
+}
+
+.sf-notification--warning:after {
+    background-color: $notice-warning-after;
+}
+
+.sf-notification--warning .notify-icon {
+    background: url('img/warning-icon.png') no-repeat;
+    background-size: cover;
+}
+
+.sf-notification--warning .sf-notification__content {
+    color: $notice-warning;
+}
+
+.sf-notification--warning .sf-icon-close {
+    background: url('img/close-warning.png') no-repeat;
+    background-size: cover;
+}
+
+.sf-notification--warning .sf-icon-close:hover {
+    background: url('img/close-warning-hover.png') no-repeat;
+    background-size: cover;
+}
+
+/* 失败 css */
+.sf-notification--error {
+    background: $notice-error-background;
+}
+
+.sf-notification--error:after {
+    background-color: $notice-error-after;
+}
+
+.sf-notification--error .notify-icon {
+    background: url('img/error-icon.png') no-repeat;
+    background-size: cover;
+}
+
+.sf-notification--error .sf-notification__content {
+    color: $notice-error;
+}
+
+.sf-notification--error .sf-icon-close {
+    background: url('img/close-error.png') no-repeat;
+    background-size: cover;
+}
+
+.sf-notification--error .sf-icon-close:hover {
+    background: url('img/close-error-hover.png') no-repeat;
+    background-size: cover;
+}

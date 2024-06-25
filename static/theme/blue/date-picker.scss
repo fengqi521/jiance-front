@@ -1,0 +1,141 @@
+.el-date-editor {
+    position: relative;
+}
+
+.el-input__prefix {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: auto;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    background: url("img/date.png") no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.el-date-editor .el-input__icon::before,
+.el-date-editor .el-input__icon::after {
+    content: "";
+}
+
+.el-input__suffix {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: auto;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    background: url("img/date-1.png") no-repeat;
+    background-size: cover;
+}
+
+.el-date-editor .el-input__inner:focus + .el-input__prefix {
+    display: none;
+}
+
+.el-date-editor .el-input__inner:focus + .el-input__suffix {
+    z-index: 2;
+}
+
+.el-date-editor .el-input__inner {
+    position: relative;
+    padding: 7px 30px 7px 12px;
+    color: #222;
+    font-size: 12px;
+    height: 36px;
+    line-height: 20px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 3px;
+    border: 1px solid rgba(224, 224, 224, 1);
+}
+
+.el-date-editor .el-input__inner:focus {
+    box-shadow: 0px 0px 2px 0px $input-right-focus;
+    border: 1px solid $input-right;
+}
+
+.el-date-picker.el-picker-panel {
+    color: #222222;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    border: 1px solid rgba(224, 224, 224, 1);
+}
+
+.el-date-picker .popper__arrow {
+    display: none;
+}
+
+.el-date-picker .el-date-table td span {
+    width: 40px;
+    height: 36px;
+    line-height: 36px;
+}
+
+.el-date-picker .el-date-table td.current:not(.disabled) span {
+    background: $knob-started;
+    border-radius: 4px;
+    font-weight: bold;
+    color: $knob-started-before;
+}
+
+.el-date-table td.available:hover,
+.el-date-picker .el-date-table td.today span {
+    color: $company-color;
+}
+
+.el-date-editor.input-error input {
+    box-shadow: 0px 0px 2px 0px rgba(255, 88, 89, 1) !important;
+    border: 1px solid rgba(255, 88, 89, 1) !important;
+}
+
+.el-date-picker .el-time-panel__btn.confirm,
+.el-date-picker .el-picker-panel__footer .el-button--text {
+    color: $company-color;
+}
+
+.el-date-picker .el-picker-panel__footer .el-button--default.is-plain:hover {
+    color: $origin-company-button;
+    border-color: $origin-company-button;
+}
+
+.el-time-range-picker .popper__arrow {
+    display: none;
+}
+.el-date-editor .el-input__icon.el-icon-time {
+    display: none;
+}
+
+.el-date-editor .el-range__close-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: auto;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    background: url("img/time.png") no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.el-date-editor.is-active .el-range__close-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: auto;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    background: url("img/time-1.png") no-repeat;
+    background-size: cover;
+}

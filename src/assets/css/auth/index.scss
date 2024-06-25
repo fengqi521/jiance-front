@@ -1,0 +1,305 @@
+.section-header {
+    padding: 0 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+}
+.section-amount {
+    margin: 8px 0 24px;
+    position: relative;
+    height: 106px;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid #e7e8e9;
+    &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 4px;
+        background: $origin-company-button;
+    }
+    .version-number {
+        text-align: center;
+        font-size: 12px;
+        color: #999999;
+        line-height: 18px;
+    }
+
+    .amount-right
+    .amount-item-inner
+    .amount-item {
+        flex: 1;
+        position: relative;
+        float: left;
+        padding: 24px 24px 0;
+        width: 50%;
+        height: 106px;
+        &:after {
+            position: absolute;
+            display: block;
+            content: '';
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 1px;
+            height: 48px;
+            background: #E7E8E9;
+        }
+        .amount-item-title{
+            height: 24px;
+            font-size: 14px;
+            color: #666666;
+            line-height: 24px;
+            margin-bottom: 10px;
+        }
+        .amount-item-text span{
+            height: 24px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #666666;
+            line-height: 24px;
+        }
+    }
+
+    .amount-right
+    .amount-item-inner
+    .amount-item:last-child{
+        &:after{
+            width:0
+        }
+    }
+}
+.header-content {
+    padding-top: 16px;
+
+    .content-item {
+        float: left;
+        position: relative;
+        padding: 0 40px 24px 0;
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        .search-input,
+        .el-select {
+            position: relative;
+            width: 150px;
+
+            /deep/ .el-input__inner {
+                height: 32px;
+                line-height: 30px;
+            }
+        }
+
+        .search-input {
+            width: 180px;
+        }
+
+        .header-left {
+            float: left;
+            padding-right: 24px;
+            font-size: 12px;
+            color: rgba(51, 51, 51, 1);
+            line-height: 32px;
+        }
+
+        .header-right {
+            float: left;
+        }
+    }
+
+}
+
+.section-container {
+    //margin-top: 24px;
+    padding: 0 24px 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+
+    .section-item-header {
+        padding: 12px 0;
+
+        span {
+            height: 32px;
+            line-height: 32px;
+        }
+
+        .section-tips {
+            padding-left: 24px;
+            font-size: 12px;
+            color: rgba(255, 102, 50, 1);
+            line-height: 32px;
+        }
+
+        .add-coupon {
+            position: relative;
+            float: right;
+            width: auto;
+            padding: 0 16px 0 16px;
+            height: 32px;
+            font-size: 12px;
+            line-height: 32px;
+            i {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                left: 16px;
+                display: block;
+                width: 24px;
+                height: 24px;
+                background: url('../../assets/img/add-station.png') no-repeat;
+                background-size: cover;
+            }
+        }
+      
+    }
+
+    .section-main {
+        height: 144px;
+        background: #F3F3F3;
+        margin-top: 24px;
+        padding: 20px 24px;
+        .section-item{
+            float: left;
+            width: 33.33%;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 12px;
+            color: #666666;
+            .section-edit{
+                display: inline-block;
+                padding-left: 12px;
+                height: 20px;
+                font-size: 12px;
+                color: $origin-company-button;
+                line-height: 20px;
+                cursor: pointer;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+        .table {
+            .td-item {
+                padding: 0 5px;
+            }
+
+            .table-column__1 {
+                flex: 3.7;
+            }
+
+            .table-column__2 {
+                flex: 3.375;
+            }
+
+            .table-operate {
+                .td-item {
+                    margin: 0 8px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+.el-select-dropdown .el-select-dropdown__item {
+    height: 32px;
+    line-height: 32px;
+}
+
+.model-box .box-outer .box-list {
+    .box-left {
+        max-width: 57px;
+    }
+
+    .box-right {
+        margin-left: 72px;
+
+        .el-input {
+            width: 252px;
+        }
+
+        .radio-outer {
+            display: flex;
+            align-items: center;
+            height: 36px;
+
+            .el-radio{
+                padding-right: 32px;
+            }
+        }
+    }
+}
+
+.third-switch{
+    /deep/ .box-outer{
+        width: 800px;
+        padding: 0 32px 32px;
+        
+        .third-title{
+            font-size: 12px;
+            color: #333333;
+            line-height: 20px;
+            margin-bottom: 8px;
+        }
+        .service_phone{
+            color: #FF6632;
+        }
+
+        .third-box{
+            width: 736px;
+            background: #E8E8E8;
+            border-radius: 4px;
+            padding-left: 12px;
+            padding-top: 16px;
+        }
+        .service_phone_box{
+            background: #ffff;
+            padding-left: 0;
+        }
+
+        .third-list{
+            display: flex;
+            flex-direction: column;
+
+            .third-box-title{
+                font-size: 12px;
+                font-weight: bold;
+                color: #333333;
+                line-height: 20px;
+                margin: 0 0 8px;
+            }
+
+            .third-box-content{
+                display: flex;
+                flex-direction: row;
+                & .box-list:nth-child(2){
+                    margin-left: 40px;
+                }
+            }
+        }
+
+        .box-bottom{
+            padding: 0 202px;
+        }
+    }
+}
+.service-phone-model{
+    /deep/ .box-outer {
+        width: 400px;
+        .third-box{
+            width: 336px;
+        }
+        .box-bottom{
+            padding: 0;
+        }
+    }
+
+}

@@ -1,0 +1,521 @@
+.section-container {
+    padding: 0 24px 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+
+    .section-item-header {
+        padding:0;
+        height: 56px;
+        .manager-span {
+            // height: 32px;
+            // line-height: 56px;
+               padding: 16px 0;
+        }
+
+        span{
+            float: left;
+            display: block;
+            margin-right: 32px;
+            // line-height: 55px;
+            color: #333333;
+
+            &.section-act {
+                position: relative;
+                color: #CAA040;
+
+                &:after {
+                    position: absolute;
+                    display: block;
+                    content: '';
+                    left: 0;
+                    bottom: -14px;
+                    transform: translateY(25%);
+                    width: 100%;
+                    height: 2px;
+                    background: #CAA040;
+                }
+            }
+        }
+    }
+
+    .section-main {
+        padding-top: 16px;
+
+        .ad_manager{
+            margin-bottom: 14px;
+            span{
+                width: 246px;
+                height: 17px;
+                font-size: 10px;
+                color: #ff6632;
+                line-height: 17px;
+            }
+        }
+
+        .add-coupon {
+            position: relative;
+            margin-left: 16px;
+            margin-top: 0;
+            float: right;
+            width: auto;
+            padding: 0 16px 0 42px;
+            height: 32px;
+            font-size: 12px;
+            line-height: 32px;
+            i {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                left: 16px;
+                display: block;
+                width: 24px;
+                height: 24px;
+                background: url('../../assets/img/add-station.png') no-repeat;
+                background-size: cover;
+            }
+        }
+
+        .header-content {
+            padding-top: 16px;
+
+            .content-item {
+                float: left;
+                position: relative;
+                padding: 0 40px 24px 0;
+        
+                &:last-child {
+                    padding-right: 0;
+                }
+        
+                .el-select {
+                    position: relative;
+                    width: 150px;
+        
+                    /deep/ .el-input__inner {
+                        height: 32px;
+                        line-height: 30px;
+                    }
+                }
+        
+                .search-input {
+                    width: 180px;
+        
+                    /deep/ .el-input__inner {
+                        height: 32px;
+                        line-height: 30px;
+                    }
+                }
+        
+                .header-left {
+                    float: left;
+                    padding-right: 24px;
+                    font-size: 12px;
+                    color: rgba(51, 51, 51, 1);
+                    line-height: 32px;
+                }
+        
+                .header-right {
+                    float: left;
+                }
+            }
+        }
+
+        .table {
+            .table-tr {
+                height: 130px;
+            }
+            .table-td {
+                padding: 0 12px;
+            }
+
+            .table-column__1 {
+                flex: 2.76;
+            }
+
+            .table-column__2 {
+                flex: 1.46;
+            }
+
+            .td-item {
+                padding: 16px 5px;
+            }
+
+            .table-link {
+                .td-item {
+                    padding: 16px 0;
+
+                    .item-text {
+                        display: block;
+                        max-height: 144px;
+                        overflow-y: auto;
+                    }
+                }
+
+
+            }
+
+            .table-img {
+                .td-item .news-img {
+                    padding: 0;
+                    width: 234px;
+                    height: 96px;
+                }
+            }
+
+            .table-operate {
+                .td-item {
+                    margin: 0 8px;
+                    padding: 0;
+                }
+            }
+
+            .knob-text {
+                padding-left: 8px;
+            }
+        }
+    }
+}
+
+.group-box {
+    /deep/ .box-outer {
+        width: 592px;
+        padding-top: 16px;
+        .section-list {
+            padding-bottom: 24px;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+
+            .section-left {
+                float: left;
+                font-size: 12px;
+                color: #333333;
+                line-height: 36px;
+            }
+
+            .section-right {
+                margin-left: 64px;
+
+                .el-date-editor {
+                    width: 150px;
+                }
+
+                .time-text {
+                    float: left;
+                    padding: 0 12px;
+                    font-size: 12px;
+                    color: rgba(102, 102, 102, 1);
+                    line-height: 36px;
+                }
+
+                &.time-outer {
+                    height: 36px;
+
+                    .el-form-item {
+                        float: left;
+                    }
+                }
+
+                .radio-outer {
+                    display: flex;
+                    height: 36px;
+                    align-items: center;
+
+                    .el-radio {
+                        padding-right: 32px;
+                    }
+                }
+
+                .coverImg,
+                .add-uploader {
+                    width: 236px;
+                    height: 98px;
+                    background-color: #F5F5F5;
+                    border: 1px dashed #E0E0E0;
+                    border-radius: 2px;
+                }
+                
+                .add-uploader_tan {
+                    width: 74px;
+                    height: 98px;
+                }
+
+                .cover-outer {
+                    display: flex;
+                    align-items: center;
+
+                    .edit-uploader {
+                        margin-left: 24px;
+                        width: 82px;
+                        height: 36px;
+                        line-height: 34px;
+                        text-align: center;
+                        background: rgba(255, 255, 255, 1);
+
+                        .el-upload {
+                            font-size: 12px;
+                            border-radius: 3px;
+                            color: #333;
+                            border: none;
+                            border: 1px solid rgba(224, 224, 224, 1);
+
+                            &:hover {
+                                color: $a-hover;
+                                border-color: $a-hover;
+                            }
+                        }
+                    }
+                }
+
+
+                .uploader-tips {
+                    margin-top: 8px;
+                    transform-origin: left;
+                    color: #666666;
+                }
+                .uploader-size{
+                    margin-top: 0px;
+                    color: #999999;
+                }
+            }
+        }
+
+        .box-bottom {
+            padding: 0 98px;
+        }
+    }
+}
+
+//共用border线，添加活动页面-‘提交’按钮上面的线-覆盖‘活动信息’下面的键
+.section-item-header-acsubmit{
+    margin-top: -40px !important;
+}
+
+.group-box{
+    /deep/ .el-input .el-input__inner{
+        padding: 2px 0 2px 6px !important;
+        width: 304px;
+        height: 36px;
+    }
+    .info-item {
+        .info-item-left {
+            max-width: 115px;
+        }
+    }
+    .info-item {
+        padding-bottom: 24px;
+
+        .info-item-left {
+            position: relative;
+            float: left;
+            max-width: 86px;
+            padding: 0 10px;
+            font-size: 12px;
+            color: #333;
+            line-height: 36px;
+
+            i {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 36px;
+                line-height: 36px;
+                display: block;
+                padding-right: 4px;
+                color: #FF6632;
+            }
+
+            &.show-app {
+                line-height: 20px;
+
+                i {
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .info-item-right {
+
+            &.voltage-outer {
+                height: 36px;
+            }
+
+            .el-input,
+            .el-select {
+                width: 304px;
+            }
+
+            .voltage-item {
+                float: left;
+                padding-right: 24px;
+
+                .el-input {
+                    float: left;
+                    width: 96px;
+                }
+            }
+
+            .voltage-unit {
+                padding-left: 8px;
+                font-size: 12px;
+                color: rgba(102, 102, 102, 1);
+                line-height: 36px;
+            }
+
+            .radio-outer {
+                display: flex;
+                height: 36px;
+                align-items: center;
+            }
+
+            .el-radio {
+                float: left;
+                display: block;
+                padding-right: 32px;
+            }
+
+            .operate-btn {
+                width: 80px;
+                font-size: 12px;
+                display: inline-flex;
+                margin-left: 24px;
+                justify-content: center;
+                float: none;
+            }
+
+            .open-listUser {
+                padding-top: 6px;
+                width: 528px;
+
+                .listcompany-main{
+                    position: relative;
+                    padding: 12px;
+                    padding-bottom: 20px;
+                    border-radius: 2px;
+                    background: #E8E8E8;
+                    .el-input--small{
+                        position: absolute !important;
+                    }
+                    &:after {
+                        position: absolute;
+                        display: block;
+                        content: '';
+                        left: 10px;
+                        top: -12px;
+                        border: 6px solid transparent;
+                        border-bottom-color: #E8E8E8;
+                    }
+
+                    .listUser-btn {
+                        position: absolute;
+                        display: block;
+                        top: 12px;
+                        right: 12px;
+                    }
+
+                    .listUser-content {
+                        
+                        width: 400px;
+                        padding: 7px 6px 0 12px;
+                        min-height: 36px;
+                        max-height: 140px;
+                        overflow-y: auto;
+                        background: rgba(255, 255, 255, 1);
+                        border-radius: 3px;
+                        border: 1px solid rgba(224, 224, 224, 1);
+
+                        .listUser-item {
+                            float: left;
+                            margin: 0 6px 7px 0;
+                            padding: 0 4px;
+                            height: 20px;
+                            background: rgba(238, 238, 238, 1);
+                            display: flex;
+                            align-items: center;
+                            border-radius: 3px;
+                            border: 1px solid rgba(224, 224, 224, 1);
+
+                            span {
+                                padding-right: 4px;
+                                font-size: 12px;
+                                color: rgba(51, 51, 51, 1);
+                                line-height: 20px;
+                            }
+
+                            i {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+                .listUser-main {
+                    position: relative;
+                    padding: 12px;
+                    padding-bottom: 20px;
+                    border-radius: 2px;
+                    background: #E8E8E8;
+                    .el-input--small{
+                        position: absolute !important;
+                    }
+                    
+                    // &:after {
+                    //     position: absolute;
+                    //     display: block;
+                    //     content: '';
+                    //     left: 82px;
+                    //     top: -12px;
+                    //     border: 6px solid transparent;
+                    //     border-bottom-color: #E8E8E8;
+                    // }
+
+                    .listUser-btn {
+                        position: absolute;
+                        display: block;
+                        top: 12px;
+                        right: 12px;
+                    }
+
+                    .listUser-content {
+                        
+                        width: 400px;
+                        padding: 7px 6px 0 12px;
+                        min-height: 36px;
+                        max-height: 140px;
+                        overflow-y: auto;
+                        background: rgba(255, 255, 255, 1);
+                        border-radius: 3px;
+                        border: 1px solid rgba(224, 224, 224, 1);
+
+                        .listUser-item {
+                            float: left;
+                            margin: 0 6px 7px 0;
+                            padding: 0 4px;
+                            height: 20px;
+                            background: rgba(238, 238, 238, 1);
+                            display: flex;
+                            align-items: center;
+                            border-radius: 3px;
+                            border: 1px solid rgba(224, 224, 224, 1);
+
+                            span {
+                                padding-right: 4px;
+                                font-size: 12px;
+                                color: rgba(51, 51, 51, 1);
+                                line-height: 20px;
+                            }
+
+                            i {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

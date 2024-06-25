@@ -1,0 +1,172 @@
+.section-list {
+    padding: 0 24px 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+
+    .header-main {
+        padding-top: 8px;
+
+        .header-amount {
+            margin-top: 16px;
+            height: 90px;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 3px;
+            border: 1px solid rgba(224, 224, 224, 1);
+            display: flex;
+            align-items: center;
+
+            .top-item {
+                position: relative;
+                flex: 1;
+                padding: 0 5px 0 24px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                &:after {
+                    position: absolute;
+                    display: block;
+                    content: '';
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    right: 0;
+                    width: 1px;
+                    height: 48px;
+                    background-color: #e7e8e9;
+                }
+
+                .top-item-tr {
+                    padding-bottom: 10px;
+                    display: flex;
+                    align-items: center;
+
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+
+                    .top-item-title {
+                        padding-bottom: 0;
+                        font-size: 12px;
+                        height: 24px;
+                    }
+
+                    .top-item-text {
+                        padding-left: 12px;
+                    }
+
+                    .item-pay-type {
+                        min-width: 60px;
+                    }
+                }
+
+                &:last-child:after {
+                    display: none;
+                }
+
+                .top-item-title {
+                    padding-bottom: 10px;
+                    font-size: 14px;
+                    color: rgba(102, 102, 102, 1);
+                    line-height: 24px;
+                }
+
+                .top-item-text {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #999;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .header-content {
+            margin-top: 16px;
+            padding: 12px 24px;
+            background-color: #f3f3f3;
+
+            .content-item {
+                float: left;
+                width: 33.33%;
+                font-size: 12px;
+                color: rgba(51, 51, 51, 1);
+                line-height: 36px;
+
+                span {
+                    padding-right: 12px;
+                    float: left;
+                    color: #666;
+                }
+
+                p {
+                    padding: 8px 0 0 72px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+
+.section-period {
+    margin-top: 24px;
+
+    .table {
+        .table-tr{
+            min-height: 72px;
+            height:auto;
+        }
+        .td-period-tip {
+            background: url('../../assets/img/tip.png') no-repeat;
+        }
+        .td-period-peak {
+            background: url('../../assets/img/peak.png') no-repeat;
+        }
+        .td-period-valley {
+            background: url('../../assets/img/valley.png') no-repeat;
+        }
+        .td-period-flat {
+            background: url('../../assets/img/flat.png') no-repeat;
+        }
+
+        .td-period{
+            display: block;
+            width: 32px;
+            height: 32px;
+            background-size: cover;
+        }
+    }
+}
+
+.section-main {
+    padding-top: 24px;
+
+    .section-list {
+        float: left;
+        width: 32%;
+    }
+
+    .section-main-center {
+        float: left;
+        width: 36%;
+        padding: 0 24px;
+
+        .section-list {
+            width: 100%;
+        }
+    }
+
+    .header-content {
+        height: 204px;
+
+        .content-item {
+            margin-bottom: 12px;
+            width: 100% !important;
+            float: none !important;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

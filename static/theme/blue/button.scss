@@ -1,0 +1,189 @@
+.btn_succ,
+.btn_cancel,
+.btn_delete,
+.btn_succ_different,
+.btn_del_different,
+.login_btn_succ,
+.login_btn_disable,
+.btn_recovery,
+.btn_close,
+.btn_unfinish {
+  display: block;
+  float: left;
+  width: 144px;
+  height: 36px;
+  background: $btn-bg-color;
+  line-height: 36px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+//筛选框查询按钮，
+.btn_succ:hover {
+  background: $btn-hover-bg-color;
+}
+
+//筛选框重置按钮，灰色
+.btn_cancel {
+  float: right;
+  color: #666;
+  background: #e8e8e8;
+}
+.btn_cancel:hover {
+  background: #C8C8C8;
+}
+
+.content-item .btn_succ,
+.content-item .btn_cancel {
+  float: left;
+  margin-right: 8px;
+  width: 72px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 12px;
+}
+
+//删除按钮，功能色红色
+.btn_delete {
+  float: left;
+  background: #FF6632;
+}
+.btn_delete:hover {
+  background: #E55B2C
+}
+
+//登录按钮
+.login_btn_succ {
+  color: #FFFFFF !important;
+  background: #C39838  !important;
+}
+.login_btn_disable {
+  color: #FFFFFF !important;
+  background: #E1CB9B  !important;
+  cursor: not-allowed !important;
+}
+
+//不可点击状态 灰色
+.btn_disable,
+.btn_disable:hover {
+  color: #AAAAAA !important;
+  border: 1px solid #E8E8E8 !important;
+  background: #E8E8E8 !important;
+  cursor: not-allowed !important;
+}
+
+
+
+//批量导入的紫色按钮
+.btn_recovery {
+  color: $company-color !important;
+  background: $btn-recovery-bg-color;
+  border: 1px solid $btn-recovery-border-color;
+}
+.btn_recovery:hover {
+  background: $btn-recovery-hover-bg-color;
+}
+
+//列表内按钮-审核、发布按钮
+.btn_unfinish {
+  color: #FFFFFF !important;
+  background: #FFB73C;
+  border: 1px solid #FFB73C;
+}
+.btn_unfinish:hover {
+  color: #FFFFFF;
+  background: #FF9820;
+  border: 1px solid #FF9820;
+}
+//列表内按钮-禁用按钮
+.btn_already {
+  color: #999999 !important;
+  background: #E8E8E8;
+  border: 1px solid #E8E8E8;
+  cursor: not-allowed;
+}
+
+
+// 设备管理-充电站管理-添加充电站
+.linear-gradient-btn {
+  background: linear-gradient(90deg, #E3C969 0%, #D3B050 100%);
+}
+
+// 专为  运维管理-批量充电-开始和停止充电设计
+// 开始充电
+//和查询按钮、删除按钮一样
+.btn_succ_different {
+  color: #FFFFFF;
+  background: #0087FF;
+  border: 1px solid #0087FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn_succ_different:hover {
+  color: #FFFFFF;
+  background: #006CCC;
+  border: 1px solid #006CCC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// 停止充电
+.btn_del_different {
+  color: #FFFFFF;
+  background: #FF6632;
+  border: 1px solid #FF6632;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn_del_different:hover {
+  color: #FFFFFF;
+  background: #E55B2C;
+  border: 1px solid #E55B2C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+//不可点击
+.del_btn_disable,
+.del_btn_disable:hover {
+  color: #fff !important;
+  background: #FFC1AD !important;
+  border: 1px solid #FFC1AD !important;
+  cursor: not-allowed !important;
+}
+.succ_btn_disable,
+.succ_btn_disable:hover {
+  color: #fff !important;
+  background: #B2DBFF !important;
+  border: 1px solid #B2DBFF !important;
+  cursor: not-allowed !important;
+}
+.btn_close{
+  background:$elec-red
+}
+
+.export-btn{
+  position: relative;
+  padding: 0 16px 0 42px;
+  height: 32px;
+  font-size: 12px;
+  line-height: 32px;
+  width:auto !important;
+
+  i {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    background: $export-icon no-repeat;
+    background-size: cover;
+  }
+}

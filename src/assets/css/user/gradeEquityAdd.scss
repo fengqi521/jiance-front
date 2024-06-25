@@ -1,0 +1,276 @@
+.section-container {
+    padding: 0 24px 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+
+    .section-item-header {
+        padding:0;
+        height: 56px;
+        .manager-span {
+            // height: 32px;
+            // line-height: 56px;
+            padding: 16px 0;
+        }
+
+        span{
+            float: left;
+            display: block;
+            margin-right: 32px;
+            // line-height: 55px;
+            color: #333333;
+
+            &.section-act {
+                position: relative;
+                color: #CAA040;
+
+                &:after {
+                    position: absolute;
+                    display: block;
+                    content: '';
+                    left: 0;
+                    bottom: -14px;
+                    transform: translateY(25%);
+                    width: 100%;
+                    height: 2px;
+                    background: #CAA040;
+                }
+            }
+        }
+    }
+
+}
+
+.change-box {
+    /deep/ .box-outer {
+        padding-top: 16px;
+        .section-list {
+            padding-bottom: 24px;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+
+            .section-left {
+                height: 40px;
+                float: left;
+                font-size: 12px;
+                color: rgba(102, 102, 102, 1);
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+
+                .team-left-blod {
+                    font-size: 12px;
+                    color: #333333;
+                }
+
+            }
+
+            .section-right {
+                margin-left: 64px;
+                width: 752px;
+
+                .section-right-36 {
+                    height: 36px;
+                    line-height: 36px;
+                }
+
+                .input-640 {
+                    width: 640px !important;
+                    height: 152px !important;
+
+                    .el-textarea__inner {
+                        width: 640px;
+                        height: 152px;
+                    }
+                }
+
+                .input-144 {
+                   width: 144px !important;
+                   margin: 0 8px;
+
+                    /deep/ .el-input__inner{
+                        width: 144px;
+                        height: 36px;
+                    }
+                }
+
+                .input-160 {
+                    width: 160px !important;
+                    margin: 0 8px;
+ 
+                     /deep/ .el-input__inner{
+                         width: 160px;
+                         height: 36px;
+                     }
+                 }
+
+                 .el-select-16 {
+                     margin-left: 16px;
+                 }
+                
+                .team-unit {
+                    margin-left: 8px;
+                    color: #666666;
+                    font-size: 12px;
+                }
+
+                .team-enough {
+                    font-size: 12px;
+                    color: #333333;
+                    line-height: 20px;
+                }
+
+                .team-valid {
+                    color: #999999;
+                    font-size: 12px;
+                    margin-left: 8px;
+                }
+
+                .team-pay {
+                    padding-top: 2px;
+
+                    .el-form-item__error {
+                       margin-left: 8px; 
+                    }
+                }
+
+                .team-serve {
+                    margin-top: 24px;
+
+                    .el-form-item__error {
+                        margin-left: 8px; 
+                    }
+                }
+
+                .team-ac-require {
+                    color: #333333;
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+
+                .team-ac-enjoy {
+                    color: #666666;
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+
+                .only-i {
+                    position: absolute;
+                    left: 8px;
+                    top: 38px;
+                    font-size: 11px;
+                    color: #999999;
+                    height: 18px;
+                    line-height: 18px;
+                    //解决谷歌浏览器字体最小12px问题
+                    -webkit-transform:scale(0.84);
+                }
+
+                .el-textarea {
+                    width: 304px;
+                    height: 96px;
+                }
+
+                .el-input {
+                    width: 304px;
+                }
+
+                .el-form-item  {
+                    display: inline-block;
+                }
+
+                .el-date-editor {
+                    width: 150px;
+                }
+
+                .time-text {
+                    float: left;
+                    padding: 0 12px;
+                    font-size: 12px;
+                    color: rgba(102, 102, 102, 1);
+                    line-height: 36px;
+                }
+
+                &.time-outer {
+                    height: 36px;
+
+                    .el-form-item {
+                        float: left;
+                    }
+                }
+
+                .radio-outer {
+                    display: flex;
+                    height: 36px;
+                    align-items: center;
+
+                    .el-radio {
+                        padding-right: 32px;
+                    }
+                }
+
+                .coverImg,
+                .add-uploader {
+                    width: 236px;
+                    height: 98px;
+                    background-color: #F5F5F5;
+                    border: 1px dashed #E0E0E0;
+                    border-radius: 2px;
+                }
+                
+                .add-uploader_tan {
+                    width: 74px;
+                    height: 98px;
+                }
+
+                .cover-outer {
+                    display: flex;
+                    align-items: center;
+
+                    .edit-uploader {
+                        margin-left: 24px;
+                        width: 82px;
+                        height: 36px;
+                        line-height: 34px;
+                        text-align: center;
+                        background: rgba(255, 255, 255, 1);
+
+                        .el-upload {
+                            font-size: 12px;
+                            border-radius: 3px;
+                            color: #333;
+                            border: none;
+                            border: 1px solid rgba(224, 224, 224, 1);
+
+                            &:hover {
+                                color: $a-hover;
+                                border-color: $a-hover;
+                            }
+                        }
+                    }
+                }
+
+
+                .uploader-tips {
+                    margin-top: 8px;
+                    transform-origin: left;
+                    color: #666666;
+                }
+                .uploader-size{
+                    margin-top: 0px;
+                    color: #999999;
+                }
+            }
+        }
+
+        .box-bottom {
+            padding: 0 98px;
+        }
+    }
+}
+
+.team-header {
+    height: 48px !important;
+}

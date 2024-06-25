@@ -1,0 +1,63 @@
+.knob {
+    position: relative;
+    width: 38px;
+    height: 20px;
+    cursor: pointer;
+    background: $knob-stop;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    user-select: none;
+    outline: none;
+    transition: background-color ease-out 0.2s;
+    cursor: pointer;
+}
+
+.knob:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    background: $knob-stop-before;
+    border-radius: 10px;
+    transition: left ease-out 0.2s;
+}
+
+.knob.knob-disabled {
+    background: #F7F7F7;
+    cursor: default;
+}
+
+.knob.knob-disabled:before {
+    background: #DEDEDE;
+}
+
+
+
+.knob.started {
+    background: $knob-started;
+    transition: background-color ease-out 0.2s;
+}
+
+.knob.started:before {
+    left: 18px;
+    background: $knob-started-before;
+    transition: left ease-out 0.2s,
+        background-color ease-out 0.2s;
+}
+
+.knob.knob-forbid{
+    background:rgba(249,244,229,1);
+}
+
+.knob.knob-forbid:before{
+    left:18px;
+    background:rgba(242,231,199,1)
+}
+
+
+//knob不可点击
+.btn_disable_started{
+    cursor: not-allowed;
+}

@@ -1,0 +1,410 @@
+.section-tips {
+    padding: 16px 24px;
+    display: flex;
+    height: 72px;
+    width: 100%;
+    background: rgba(255, 183, 60, 0.15);
+    border-radius: 3px;
+    margin-bottom: 24px;
+
+    i {
+        display: inline-flex;
+    }
+
+    .tips-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tips-text {
+        padding-left: 12px;
+        font-size: 12px;
+        color: #666666;
+        line-height: 20px;
+    }
+}
+
+.section-container {
+    padding: 0 24px 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+
+    .section-item-header {
+        padding: 0;
+        height: 56px;
+        .manager-span {
+            // height: 32px;
+            // line-height: 56px;
+            padding: 16px 0;
+        }
+
+        span {
+            float: left;
+            display: block;
+            margin-right: 32px;
+            // line-height: 55px;
+            color: #333333;
+       
+        }
+    }
+}
+
+.activity-box {
+    /deep/ .box-outer {
+        padding-top: 16px;
+        .section-list {
+            padding-bottom: 24px;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+
+            .section-left {
+                float: left;
+                font-size: 12px;
+                color: rgba(102, 102, 102, 1);
+                line-height: 36px;
+            }
+
+            .section-right {
+                margin-left: 88px;
+
+                .el-textarea {
+                    width: 304px;
+                    height: 96px;
+                }
+
+                .el-date-editor {
+                    width: 150px;
+                }
+
+                .time-text {
+                    float: left;
+                    padding: 0 12px;
+                    font-size: 12px;
+                    color: rgba(102, 102, 102, 1);
+                    line-height: 36px;
+                }
+
+                &.time-outer {
+                    height: 36px;
+
+                    .el-form-item {
+                        float: left;
+                    }
+                }
+
+                .radio-outer {
+                    display: flex;
+                    height: 36px;
+                    align-items: center;
+
+                    .el-radio {
+                        padding-right: 32px;
+                    }
+                }
+
+                .coverImg,
+                .add-uploader {
+                    width: 236px;
+                    height: 98px;
+                    background-color: #f5f5f5;
+                    border: 1px dashed #e0e0e0;
+                    border-radius: 2px;
+                }
+
+                .add-uploader_tan {
+                    width: 74px;
+                    height: 98px;
+                }
+
+                .cover-outer {
+                    display: flex;
+                    align-items: center;
+
+                    .edit-uploader {
+                        margin-left: 24px;
+                        width: 82px;
+                        height: 36px;
+                        line-height: 34px;
+                        text-align: center;
+                        background: rgba(255, 255, 255, 1);
+
+                        .el-upload {
+                            font-size: 12px;
+                            border-radius: 3px;
+                            color: #333;
+                            border: none;
+                            border: 1px solid rgba(224, 224, 224, 1);
+
+                            &:hover {
+                                color: $a-hover;
+                                border-color: $a-hover;
+                            }
+                        }
+                    }
+                }
+
+                .uploader-tips {
+                    margin-top: 8px;
+                    transform-origin: left;
+                    color: #666666;
+                }
+                .uploader-size {
+                    margin-top: 0px;
+                    color: #999999;
+                }
+            }
+        }
+
+        .box-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            div {
+                margin: 0 24px;
+            }
+        }
+    }
+}
+
+.activity-box-car {
+    .section-list {
+        height: 60px;
+    }
+
+    .section-content {
+        display: flex;
+
+        .content-right {
+            margin-left: 160px;
+        }
+
+        .code-box {
+            display: flex;
+            flex-direction: column;
+            width: 240px;
+            height: 320px;
+            border-radius: 3px;
+            border: 1px solid #e0e0e0;
+
+            .code-title {
+                padding: 12px 24px;
+                width: 100%;
+                height: 48px;
+                background: #eeeeee;
+                border-radius: 3px 3px 0px 0px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #666666;
+                line-height: 24px;
+            }
+
+            .code-img {
+                display: flex;
+                justify-content: center;
+                margin-top: 38px;
+
+                img {
+                    width: 160px;
+                    height: 160px;
+                }
+            }
+
+            .code-annotation {
+                margin-top: 16px;
+                font-size: 12px;
+                color: #666666;
+                line-height: 20px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .notice-wechat-id {
+        position: relative;
+        top: -18px;
+        height: fit-content;
+        padding-bottom: 10px !important;
+        .word {
+            font-size: 12px;
+            color: #999999;
+            line-height: 20px;
+        }
+    }
+
+    .section-right {
+        margin-left: 64px !important;
+
+        /deep/.account-type {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .el-form-item__content {
+                display: flex;
+            }
+
+            .type {
+                display: flex;
+                align-items: center;
+
+                .el-radio__label {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            .text {
+                font-size: 12px;
+                color: #333333;
+                line-height: 36px;
+                margin-left: 6px;
+            }
+
+            img {
+                width: 32px;
+                height: 32px;
+                margin-right: 8px;
+            }
+        }
+        /deep/ .el-textarea {
+            height: 36px !important;
+            .el-textarea__inner {
+                width: 304px;
+                height: 36px;
+                overflow: hidden;
+            }
+        }
+        /deep/ .el-input {
+            .el-input__inner {
+                width: 304px;
+                height: 36px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+.choose-car-type {
+    width: 80px;
+    height: 36px;
+    position: absolute;
+    top: 221px;
+    left: 623px;
+    font-size: 12px;
+    //z-index: 10;
+}
+.car_company_name_common {
+    /deep/ .el-input__inner {
+        width: 304px;
+    }
+}
+
+.message-box {
+    .box-outer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 525px;
+        padding: 0 32px 32px;
+        background: rgba(255, 255, 255, 1);
+        transform-origin: center;
+        border-radius: 4px;
+
+        .cancel {
+            display: block;
+            position: absolute;
+            top: -40px;
+            right: 0;
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+        }
+
+        .box-title {
+            padding-top: 24px;
+            font-size: 16px;
+            color: rgba(34, 34, 34, 1);
+            line-height: 24px;
+        }
+        .box-content {
+            padding: 24px 0;
+            font-size: 12px;
+            color: #333;
+            line-height: 20px;
+        }
+        .box-list {
+            padding-bottom: 24px;
+            .box-left {
+                float: left;
+                font-size: 12px;
+                color: #666666;
+                line-height: 36px;
+            }
+            .box-right {
+                margin-left: 72px;
+                .el-input {
+                    width: 252px;
+
+                    &.account-input {
+                        width: 204px;
+                    }
+                }
+                .check-phone-show {
+                    height: 36px;
+                    display: inline-block;
+                    font-size: 12px;
+                    color: #333;
+                }
+
+                .unit {
+                    font-size: 12px;
+                    color: #666;
+                }
+                .get-code {
+                    font-size: 12px;
+                    display: inline-block;
+                    color: #333;
+                    width: 120px;
+                    float: right;
+                    height: 36px;
+                    background-color: #ffffff;
+                    cursor: pointer;
+                    border: 1px solid rgba(231, 232, 233, 1);
+                }
+                .count {
+                    font-size: 12px;
+                    display: inline-block;
+                    color: #333;
+                    width: 120px;
+                    float: right;
+                    height: 36px;
+                    background-color: #e8e8e8;
+                    border: 1px solid rgba(231, 232, 233, 1);
+                }
+            }
+        }
+
+        .box-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            div {
+                margin: 0 24px;
+            }
+        }
+    }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.2s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}

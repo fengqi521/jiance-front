@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+dist/
+static/ckeditor
+
+npm-debug.log
+yarn-error.log
+package-lock.json
+test/unit/coverage
+test/e2e/reports
+selenium-debug.log
+.idea
+.vscode
+.cache

@@ -1,0 +1,42 @@
+.add-card-modal {
+  .box-list {
+    display: flex;
+    padding-bottom: 24px;
+
+    .box-left {
+      position: relative;
+      padding: 0 10px;
+      min-width: 92px;
+
+      i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 36px;
+        line-height: 36px;
+        display: block;
+        padding-right: 4px;
+        color: #ff6632;
+      }
+    }
+
+    .box-right {
+      flex: 1;
+      margin-left: 0 !important;
+    }
+
+    .box-right .bank-radio {
+      margin-right: 24px;
+    }
+
+    .box-right .modal-input-rate {
+      display: inline-block;
+      width: 43%;
+    }
+
+    .box-right .modal-unit {
+      font-size: 12px;
+      color: #666;
+    }
+  }
+}

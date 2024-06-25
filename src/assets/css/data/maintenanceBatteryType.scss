@@ -1,0 +1,58 @@
+.section-maintenance-battery {
+  .section-select {
+    display: table;
+    word-spacing: -1em;
+    margin-bottom: 24px;
+
+    .select-label {
+      font-size: 12px;
+      color: #333;
+    }
+
+    .el-select {
+      margin-left: 24px;
+      width: 140px;
+
+      /deep/ .el-input__inner {
+        height: 32px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .section-distribution,
+  .section-percent {
+    width: 100%;
+    height: 398px;
+    padding: 0 24px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(231, 232, 233, 1);
+
+    .section-charts {
+      height: 306px;
+    }
+  }
+
+  .section-distribution {
+    .section-charts {
+      max-width: 800px;
+      margin: 0 auto;
+      height: 302px;
+    }
+  }
+
+  .section-percent {
+    margin-top: 24px;
+    height: 418px;
+  }
+
+  .chart-title {
+    display: block;
+    margin-top: 16px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #333;
+  }
+}

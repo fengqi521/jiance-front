@@ -1,0 +1,141 @@
+.section-header {
+    padding: 0 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+}
+
+.section-tips {
+    margin-bottom: 8px;
+    padding: 8px 24px;
+    background: rgba(255, 183, 60, 0.15);
+    border-radius: 3px;
+
+    i {
+        margin-top: 6px;
+        float: left;
+        display: block;
+    }
+
+    .section-tips-content {
+        padding-left: 36px;
+
+        .tips-text {
+            font-size: 12px;
+            font-weight: normal;
+            color: #666666;
+            line-height: 20px;
+        }
+
+        .tips-text-bold{
+            font-weight: bold;
+        }
+    }
+
+}
+
+.header-content {
+    padding-top: 16px;
+
+    .content-item {
+        float: left;
+        position: relative;
+        padding: 0 40px 24px 0;
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        .search-input,
+        .el-select {
+            position: relative;
+            width: 150px;
+
+            &.search-input {
+                width: 180px;
+            }
+
+            /deep/ .el-input__inner {
+                height: 32px;
+                line-height: 30px;
+            }
+        }
+
+        .header-left {
+            float: left;
+            padding-right: 24px;
+            font-size: 12px;
+            color: rgba(51, 51, 51, 1);
+            line-height: 32px;
+        }
+
+        .header-right {
+            float: left;
+        }
+    }
+
+}
+
+.section-container {
+    margin-top: 24px;
+    padding: 0 24px 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+
+    .section-item-header {
+        padding: 12px 0;
+
+        span {
+            height: 32px;
+            line-height: 32px;
+        }
+
+        .add-coupon {
+            position: relative;
+            margin-left: 16px;
+            float: right;
+            width: auto;
+            padding: 0 16px 0 42px;
+            height: 32px;
+            font-size: 12px;
+            line-height: 32px;
+
+            i {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                left: 16px;
+                display: block;
+                width: 24px;
+                height: 24px;
+                background: url('../../assets/img/add-station.png') no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    .section-main {
+        padding-top: 16px;
+
+        .table {
+            .td-item {
+                padding: 0 5px;
+            }
+
+            .table-operate {
+                .td-item {
+                    margin: 0 8px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+.el-select-dropdown .el-select-dropdown__item {
+    height: 32px;
+    line-height: 32px;
+}
+

@@ -1,0 +1,31 @@
+.el-form {
+  width: 100%;
+}
+
+.el-form-item--mini.el-form-item,
+.el-form-item--small.el-form-item {
+  margin-bottom: 0;
+}
+
+.el-form-item .el-form-item__content {
+  line-height: 34px;
+}
+
+.el-form-item.is-error .el-input__inner,
+.el-form-item.is-error .el-input__inner:focus,
+.el-form-item.is-error .el-input__inner:hover,
+.el-form-item.is-error .el-textarea__inner,
+.el-form-item.is-error .el-textarea__inner:focus,
+.el-form-item.is-error .el-textarea__inner:hover {
+  box-shadow: 0px 0px 2px 0px $form-error;
+  border: 1px solid $form-error !important;
+}
+
+.el-form .el-form-item__error {
+  padding-top: 4px;
+  font-size: 11px;
+  color: $form-error-word;
+  transform-origin: left;
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+}

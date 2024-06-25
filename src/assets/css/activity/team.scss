@@ -1,0 +1,98 @@
+.section-title {
+    padding-bottom:0 !important;
+}
+
+.add-coupon {
+    display: flex;
+    align-items: center;
+
+   i {
+        position: relative !important;
+        left: 0 !important;
+        margin-right: 2px !important;
+    }
+}
+
+.header-content-team {
+    margin-top:20px;
+
+    /deep/ .el-input__inner {
+        height: 32px;
+    }
+}
+
+/deep/ .team-rule {
+    
+    .box-outer {
+        width: 592px;
+        height: 320px;
+    }
+
+    .team-content {
+        width: 528px;
+        height: 216px;
+        background: #E8E8E8;
+        border-radius: 4px;
+        margin-top: 24px;
+        padding: 14px 12px;
+
+        span {
+            font-size: 12px;
+            color: #333333;
+            line-height: 24px;
+        }
+    }
+}
+
+/deep/ .team-no-del {
+
+    .box-outer {
+        width: 408px;
+        height: 256px;
+        padding: 0 32px 32px;
+        border-radius : 4px;
+
+        .team-img-error {
+            img {
+                width: 72px;
+                height: 72px;
+            }
+        }
+
+        .team-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .team-content-error {
+                font-size: 14px;
+                color: #333333;
+                line-height: 24px;
+                margin-top: 9px;
+            }
+
+            .team-no-error {
+                font-size: 12px;
+                color: #666666;
+                line-height: 24px;
+                padding: 12px 0;
+            }
+
+            .team-error-border {
+                width: 344px;
+                height: 1px;
+                background: #E0E0E0;
+            }
+
+            .team-btn-error {
+                margin-top: 11px;
+            }
+        }
+    }
+    
+}
+
+.team-not-edit {
+    cursor:not-allowed;
+}

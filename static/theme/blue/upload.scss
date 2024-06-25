@@ -1,0 +1,95 @@
+.el-upload {
+    width: 100%;
+    height: 100%;
+}
+
+/* 图片已选中 css */
+.uploader-main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.uploader-main .coverImg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.uploader-main .edit-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 保证悬停的时候才加蒙版 */
+.uploader-main .edit-img:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.uploader-main .edit-btn {
+    width:82px;
+    height:36px;
+    line-height: 36px;
+    text-align: center;
+    background:rgba(255, 255, 255, 1);
+    border-radius:3px;
+    color: #333333;
+    opacity: 0;
+    font-size: 12px;
+}
+
+.uploader-main:hover .edit-btn{
+     opacity: 1;
+}
+
+.uploader-main .edit-btn:hover{
+    color: $company-color;
+}
+
+/* 为选中图片 css */
+.uploader-main__1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.uploader-title {
+    padding: 4px 0;
+    font-size: 14px;
+    color: rgba(102, 102, 102, 1);
+    line-height: 24px;
+}
+
+.uploader-detail,
+.uploader-tips {
+    font-size: 11px;
+    transform: scale(.9);
+    transform-origin: center;
+    color: rgba(102, 102, 102, 1);
+    line-height: 20px;
+}
+
+.uploader-tips {
+    color: #999999;
+}
+
+.uploader-main__1 .uploader-icon {
+    width: 32px;
+    height: 32px;
+    background: url('img/upload.png') no-repeat;
+    background-size: cover;
+}
+
+.uploader-main__1:hover .uploader-icon {
+    background: url('img/upload-hover.png') no-repeat;
+    background-size: cover;
+}

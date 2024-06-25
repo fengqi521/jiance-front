@@ -1,0 +1,209 @@
+.coupon-ac-ma {
+  .section-account {
+    font-size: 12px;
+    font-weight: bold;
+    color: #666666;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+
+  .header-content {
+    padding-top: 16px;
+    max-height: 104px;
+    min-height: 48px;
+    .content-item {
+      float: left;
+      position: relative;
+      padding: 0 40px 0 0;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      .el-input {
+        position: relative;
+        width: 150px;
+
+        /deep/ .el-input__inner {
+          width: 150px;
+          height: 32px;
+          line-height: 30px;
+        }
+      }
+
+      .header-left {
+        float: left;
+        padding-right: 24px;
+        font-size: 12px;
+        color: rgba(51, 51, 51, 1);
+        line-height: 32px;
+      }
+
+      .end-time {
+        height: 32px;
+      }
+
+      .header-right {
+        float: left;
+      }
+    }
+    .export-location {
+      float: right;
+      width: 82px;
+    }
+  }
+
+  .section-amount {
+    margin: 0 0 24px;
+    position: relative;
+    height: 106px;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid #e7e8e9;
+    &:after {
+      position: absolute;
+      display: block;
+      content: '';
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 4px;
+      background: $origin-company-button;
+    }
+    .version-number {
+      text-align: center;
+      font-size: 12px;
+      color: #999999;
+      line-height: 18px;
+    }
+
+    .amount-right .amount-item-inner .amount-item {
+      flex: 1;
+      position: relative;
+      float: left;
+      padding: 24px 24px 0;
+      width: 50%;
+      height: 106px;
+      &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 1px;
+        height: 48px;
+        background: #e7e8e9;
+      }
+      .amount-item-title {
+        height: 24px;
+        font-size: 14px;
+        color: #666666;
+        line-height: 24px;
+        margin-bottom: 10px;
+      }
+      .amount-item-text span {
+        height: 24px;
+        font-size: 28px;
+        font-weight: bold;
+        color: #666666;
+        line-height: 24px;
+      }
+    }
+
+    .amount-right .amount-item-inner .amount-item:last-child {
+      &:after {
+        width: 0;
+      }
+    }
+  }
+
+  .section-container {
+    padding: 0 24px 24px;
+    // min-width: 1150px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+    .section-item-header {
+      .tip {
+        margin-left: 24px;
+        height: 100%;
+        font-size: 12px;
+        color: $origin-operation-button;
+      }
+    }
+
+    .add-coupon {
+      span {
+        height: 32px;
+        line-height: 32px;
+      }
+      a:hover {
+        color: #fff;
+      }
+      .add-coupon,
+      .send-btn {
+        position: relative;
+        margin-left: 16px;
+        float: right;
+        width: auto;
+        padding: 0 16px 0 42px;
+        height: 32px;
+        font-size: 12px;
+        line-height: 32px;
+
+        i {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          left: 16px;
+          display: block;
+          width: 24px;
+          height: 24px;
+          background: url('../../assets/img/add-station.png') no-repeat;
+          background-size: cover;
+        }
+      }
+
+      .send-btn {
+        text-align: center;
+        padding: 0 16px;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+
+    .section-main {
+      padding-top: 16px;
+
+      .table {
+        .td-item {
+          padding: 0 5px;
+        }
+
+        .table-operate {
+          .td-item {
+            margin: 0 8px;
+            padding: 0;
+          }
+        }
+
+        .knob-text {
+          padding-left: 8px;
+        }
+      }
+    }
+  }
+
+  .el-select-dropdown .el-select-dropdown__item {
+    height: 32px;
+    line-height: 32px;
+  }
+  /deep/ .el-input .el-input__inner {
+    height: 32px;
+  }
+}

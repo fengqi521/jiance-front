@@ -1,0 +1,183 @@
+.pagination {
+    position: relative;
+    padding: 0px 80px 0 0;
+    margin-top: 14px;
+    overflow: hidden;
+    /*浏览器厂商前缀 - 禁用选中*/
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.paginate-left {
+    float: left;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+    line-height: 30px;
+}
+
+.paginate-center {
+    float: right;
+    overflow: hidden;
+}
+
+.pager-main,
+.first,
+.next {
+    font-size: 0;
+    float: left;
+    padding: 0;
+    font-weight: normal;
+}
+
+.pager-main li,
+.item-li {
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    margin: 0 0.5px;
+    width: 28px;
+    min-width: 28px;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    color: #999999;
+    font-weight: normal;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+    cursor: pointer;
+    transition: all 0s;
+}
+
+.item-li{
+    position: relative;
+}
+
+.item-li span{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    display: block;
+    width: 28px;
+    height: 30px;
+}
+
+.item-li.first-item span{
+    background: url('img/first.png') no-repeat;
+    background-size: cover;
+}
+
+.item-li.first-item:hover span {
+    background: url('img/first-hover.png') no-repeat;
+    background-size: cover;
+}
+
+.item-li.prev-item span {
+    background: url('img/prev.png') no-repeat;
+    background-size: cover;
+}
+
+.item-li.prev-item:hover span {
+    background: url('img/prev-hover.png') no-repeat;
+    background-size: cover;
+}
+
+.item-li.next-item span {
+    background: url('img/next.png') no-repeat;
+    background-size: cover;
+}
+
+.item-li.next-item:hover span {
+    background: url('img/next-hover.png') no-repeat;
+    background-size: cover;
+}
+
+.item-li.last-item span {
+    background: url('img/last.png') no-repeat;
+    background-size: cover;
+}
+
+.item-li.last-item:hover span {
+    background: url('img/last-hover.png') no-repeat;
+    background-size: cover;
+}
+
+.pager-main li:hover,
+.item-li:hover {
+    color: #666666;
+    background-color: #EEEEEE;
+}
+
+.pager-main li.active {
+    color: #fff;
+    background: $origin-company-button;
+    border: 1px solid $origin-company-button;
+}
+
+.item-li img {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+}
+
+.paginate-jump {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 68px;
+    height: 30px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.jump-input {
+    width: 100%;
+    padding: 0 42px 0 8px;
+    height: 100%;
+    font-size: 14px;
+    text-align: center;
+    color: #333333;
+    line-height: 30px;
+    background: transparent;
+    border: none;
+}
+
+.jump-go {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34px;
+    height: 28px;
+    font-size: 14px;
+    color: #999999;
+    line-height: 30px;
+    text-align: center;
+    border-left: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: all 0s;
+}
+
+.jump-go:hover {
+    background-color: #eee;
+}

@@ -1,0 +1,49 @@
+.section-container {
+  padding: 0 24px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 2px;
+  border: 1px solid rgba(231, 232, 233, 1);
+}
+
+.section-bom {
+  width: 418px;
+  padding: 24px 0;
+
+  .card-form-list {
+    margin-bottom: 24px;
+    .card-form-label {
+      min-width: 84px;
+      margin-right: 18px;
+      font-size: 12px;
+      color: #ff6632;
+      line-height: 36px;
+    }
+
+    .label {
+      color: #666;
+      margin-left: 4px;
+    }
+  }
+
+  .card-form-service {
+    .el-form-item {
+      display: inline-block;
+      width: 307px;
+    }
+    .card-form-unit {
+      font-size: 12px;
+      color: #666;
+      vertical-align: middle;
+    }
+  }
+
+  /deep/ .card-form-item.is-error .el-input__inner {
+    border-color: #e0e0e0 !important;
+    box-shadow: none;
+  }
+
+  .btn_succ {
+    float: none;
+    margin: 0 auto;
+  }
+}

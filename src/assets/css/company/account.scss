@@ -1,0 +1,227 @@
+.section-header {
+    padding: 0 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid #e7e8e9;
+}
+
+.header-content {
+    padding-top: 16px;
+
+    .content-item {
+        float: left;
+        position: relative;
+        padding: 0 40px 24px 0;
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        .search-input {
+            position: relative;
+            width: 180px;
+
+            /deep/ .el-input__inner {
+                height: 32px;
+                line-height: 30px;
+            }
+        }
+
+        .header-left {
+            float: left;
+            padding-right: 24px;
+            font-size: 12px;
+            color: rgba(51, 51, 51, 1);
+            line-height: 32px;
+        }
+
+        .header-right {
+            float: left;
+        }
+    }
+
+}
+
+.section-container {
+    margin-top: 24px;
+    padding: 0 24px 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+
+    .section-item-header {
+        padding: 12px 0;
+
+        span {
+            height: 32px;
+            line-height: 32px;
+        }
+
+        .section-tips {
+            margin-bottom: 0;
+            padding-left: 24px;
+            font-size: 12px;
+            color: rgba(255, 102, 50, 1);
+            line-height: 32px;
+            background: transparent;
+        }
+
+        .add-coupon {
+            position: relative;
+            margin-left: 16px;
+            float: right;
+            width: auto;
+            padding: 0 16px 0 42px;
+            height: 32px;
+            font-size: 12px;
+            line-height: 32px;
+
+            i {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                left: 16px;
+                display: block;
+                width: 24px;
+                height: 24px;
+                background: url('../../assets/img/add-station.png') no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    .section-main {
+        padding-top: 16px;
+
+        .el-table {
+            border-radius: 4px 4px 0 0;
+            overflow: hidden;
+
+            /deep/ .el-table__row {
+                height: 72px;
+
+                &.hover-row td {
+                    background-color: #F8F8F8;
+                }
+
+                .cell {
+                    line-height: 20px;
+                }
+            }
+
+            .td-operate,
+            .knob-outer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .knob-text {
+                    padding-left: 8px;
+                    color: #666;
+                }
+
+                .edit-icon {
+                    margin-right: 8px;
+                }
+
+                .balance-icon {
+                    margin-left: 8px;
+                    margin-right: 16px;
+                }
+            }
+
+            .td-operate {
+                //background: red;
+                &>* {
+
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+}
+
+.el-select-dropdown .el-select-dropdown__item {
+    height: 32px;
+    line-height: 32px;
+}
+
+
+// 添加子账号
+.model-box .box-outer .box-list {
+    padding-bottom: 24px;
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+
+    .box-left {
+        position: relative;
+        float: left;
+        font-size: 12px;
+        color: #666;
+        line-height: 36px;
+
+        i {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 36px;
+            line-height: 36px;
+            display: block;
+            padding-right: 4px;
+            color: #FF6632;
+        }
+    }
+
+    .box-right {
+        margin-left: 72px;
+
+        .el-select,
+        .el-input {
+            width: 252px;
+
+            &.amount-input {
+                width: 204px;
+            }
+        }
+
+        .unit {
+            font-size: 12px;
+            color: #666;
+        }
+
+        &.box-balance {
+            width: 252px;
+            font-size: 12px;
+            color: rgba(51, 51, 51, 1);
+            line-height: 36px;
+        }
+    }
+}
+
+.box-bottom {
+    padding: 0 6px;
+}
+
+.section-tips {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    height: 48px;
+    background: rgba(255, 183, 60, 0.15);
+    border-radius: 3px;
+
+    p {
+        padding-left: 12px;
+        font-size: 12px;
+        color: rgba(102, 102, 102, 1);
+        line-height: 24px;
+
+        span {
+            font-weight: bold;
+        }
+    }
+}

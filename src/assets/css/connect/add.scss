@@ -1,0 +1,84 @@
+.section-container {
+    padding: 0 24px 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+
+
+    .section-info {
+        .info-content {
+            border-bottom: 1px solid rgba(224, 224, 224, 1);
+
+            .info-left {
+                float: left;
+                padding-top: 24px;
+            }
+
+            .info-right {
+                float: left;
+                padding: 24px 0 0 48px;
+
+                .info-item-right {
+                    margin-left: 120px !important;
+                }
+
+                .info-item-left {
+                    max-width: 120px !important;
+                }
+            }
+
+            .info-item {
+                padding-bottom: 24px;
+
+                .info-item-left {
+                    position: relative;
+                    float: left;
+                    max-width: 110px;
+                    padding: 0 10px;
+                    font-size: 12px;
+                    color: #333;
+                    line-height: 36px;
+
+                    i {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 36px;
+                        line-height: 36px;
+                        display: block;
+                        padding-right: 4px;
+                        color: #FF6632;
+                    }
+
+                    &.show-app {
+                        line-height: 20px;
+
+                        i {
+                            line-height: 20px;
+                        }
+                    }
+                }
+
+                .info-item-right {
+                    margin-left: 110px;
+
+                    .el-input,
+                    .el-select {
+                        width: 304px;
+                    }
+
+                    .el-textarea {
+                        width: 304px;
+                        height: 96px;
+                    }
+                }
+            }
+
+        }
+
+        .btn_succ {
+            margin: 39px auto 0;
+            float: none;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link id="disabled"
+        href="<%= process.env.NODE_ENV =='development'?'/api':'' %>/cdnjs/element-ui/2.11.1/theme-chalk/index.css"
+        rel="stylesheet">
+    <title>地质监测平台</title>
+    <!-- <link type="image/x-icon" rel="shortcut icon"
+        href="<%= process.env.NODE_ENV =='development'?'/api':'' %>/logo/logo-small.png">
+    </link>
+    <link type="image/x-icon" rel="icon"
+        href="<%= process.env.NODE_ENV =='development'?'/api':'' %>/logo/logo-small.png">
+    </link> -->
+</head>
+<script
+    src="<%= process.env.NODE_ENV =='development'?'/api':'' %>/cdnjs/vue/2.6.8/<%= process.env.NODE_ENV =='development'?'vue':'vue.min' %>.js"></script>
+<script src="<%= process.env.NODE_ENV =='development'?'/api':'' %>/cdnjs/vuex/2.3.1/vuex.min.js"></script>
+<script src="<%= process.env.NODE_ENV =='development'?'/api':'' %>/cdnjs/element-ui/2.11.1/index.js"></script>
+<script src="<%= process.env.NODE_ENV =='development'?'/api':'' %>/cdnjs/vue-router/2.5.3/vue-router.min.js"></script>
+<script src="<%= process.env.NODE_ENV =='development'?'/api':'' %>/cdnjs/echarts/4.2.1/echarts.min.js"></script>
+<script src="<%= process.env.NODE_ENV =='development'?'/api':'' %>/cdnjs/axios/0.18.0/axios.min.js"></script>
+<script src="<%= process.env.NODE_ENV =='development'?'/api':'' %>/cdnjs/js-cookie/2.1.4/js.cookie.min.js"></script>
+
+<body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+
+</html>

@@ -1,0 +1,363 @@
+@import './mixin.scss';
+// @import "./nav.scss";
+// @import "./aside.scss";
+@import './table.scss';
+
+body {
+  min-width: 1200px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'MicrosoftYaHei', 'PingFang SC', '微软雅黑', 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', Arial,
+    sans-serif;
+  background-color: #f4f4f4;
+  -webkit-appearance: none;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+ol,
+form,
+input,
+textarea,
+th,
+td,
+span,
+select {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none; // 可以去除浏览器默认样式.
+  font-weight: normal;
+  transition: all 0.1s linear;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+i {
+  font-style: normal;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+#app22 {
+  height: 100%;
+}
+
+.ellipsis {
+  overflow: hidden;
+  /*溢出隐藏*/
+  text-overflow: ellipsis;
+  /*多余文本的省略方式，ellipsis是省略的意思*/
+  white-space: nowrap;
+  /*文本不折行*/
+}
+
+/* 多行省略 */
+.mul_ellipsis_3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+input,
+textarea {
+  color: #333333;
+  font-size: 12px;
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  appearance: none;
+  font-family: PingFangSC, Helvetica Neue, Helvetica, Roboto, Arial, Hiragino Sans GB, Microsoft Yahei,
+    WenQuanYi Micro Hei;
+}
+
+textarea {
+  resize: none;
+  overflow: auto;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  // -webkit-text-fill-color: #999;
+  transition: background-color 5000000s ease-in-out 0s;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-size: 12px;
+  text-align: left;
+  color: #999999 !important;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-size: 12px;
+  text-align: left;
+  color: #999999 !important;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-size: 12px;
+  text-align: left;
+  color: #999999 !important;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-size: 12px;
+  text-align: left;
+  color: #999999 !important;
+}
+
+.scrollBar {
+  @include scrollBar;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+a,
+a:focus,
+a:hover,
+a:active {
+  outline: none;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+/*去掉input 输入框右边的上下箭头按钮*/
+
+::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+// ---------------------------------------------
+//  全局遮罩层样式
+.model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  z-index: 2011;
+}
+
+section {
+  position: relative;
+  padding: 32px 32px 48px 208px;
+}
+
+.section-item-header {
+  padding: 16px 0;
+  font-size: 16px;
+  color: rgba(51, 51, 51, 1);
+  line-height: 24px;
+  border-bottom: 1px solid #f0f0f0;
+
+  span {
+    float: left;
+    line-height: 32px;
+  }
+
+  .tips-icon {
+    float: left;
+    margin-left: 4px;
+    // margin-top: 20px !important;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url('../img/tips-icon.png') no-repeat;
+    background-size: cover;
+    z-index: 11;
+  }
+}
+
+// 媒体查询 - 平台管理适配小屏幕 css
+@media screen and (max-width: 1440px) {
+  .section-mediaQuery .main-right-list {
+    margin-left: 24px !important;
+  }
+
+  .section-mediaQuery .el-form-item {
+    width: 252px !important;
+  }
+
+  .section-mediaQuery .main-right-bottom {
+    padding-left: 106px !important;
+
+    &.system-right-bottom {
+      padding-left: 120px !important;
+    }
+  }
+}
+
+/*单选框的取消点击边框的处理*/
+
+/deep/ .el-radio:focus:not(.is-focus):not(:active) {
+  -webkit-box-shadow: 0 0 2px 2px #fff !important;
+  box-shadow: 0 0 2px 2px #fff !important;
+}
+/deep/ .el-radio:focus:not(.is-focus):not(:active):not(.is-disabled) .el-radio__inner {
+  -webkit-box-shadow: 0 0 2px 2px #fff !important;
+  box-shadow: 0 0 2px 2px #fff !important;
+}
+/deep/ .el-radio__input .el-radio__inner {
+  border-color: transparent;
+  background: transparent;
+}
+
+//****以下是换肤---所公用样式
+//路由蓝色回退
+.section-title {
+  padding-bottom: 24px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(68, 68, 68, 1);
+  line-height: 24px;
+
+  a {
+    color: $section-act;
+    cursor: pointer;
+  }
+
+  .section-title-act {
+    color: $section-act;
+    cursor: pointer;
+  }
+}
+
+// 路由切换
+.section-item-router {
+  padding: 0;
+  height: 56px;
+
+  a {
+    float: left;
+    display: block;
+    margin-right: 32px;
+    line-height: 55px;
+    color: #333333;
+
+    &.section-act {
+      position: relative;
+      color: $section-act;
+
+      &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        left: 0;
+        bottom: -1px;
+        transform: translateY(25%);
+        width: 100%;
+        height: 2px;
+        background: $section-act;
+      }
+    }
+  }
+}
+
+.section-item-router {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+//未开始-未兑换-未使用-未支付-待处理   进行中   已结束
+
+.section-no-begin {
+  color: $section-no-begin !important;
+  font-size: 12px;
+}
+.section-running {
+  color: $section-running !important;
+  font-size: 12px;
+}
+.section-end {
+  color: $section-end !important;
+  font-size: 12px;
+}
+
+//设备管理-资产管理-现有启用设备数量
+.amount-item-number {
+  color: $amount-item-number !important;
+}
+
+// el-tooltip 小气泡里面的  带颜色下划线
+.hover-green {
+  a {
+    color: $a-hover;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+//table hover 升级记录
+.td-item {
+  a {
+    color: $a-hover !important;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// 批量导入-图标  out-car.svg
+.send-btn .add-station-out {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 16px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: $out-car no-repeat !important;
+  background-size: cover;
+}

@@ -1,0 +1,300 @@
+.section-header {
+    padding: 0 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+}
+
+.header-content {
+    padding-top: 16px;
+
+    .content-item {
+        float: left;
+        position: relative;
+        padding: 0 40px 24px 0;
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        .el-select {
+            position: relative;
+            width: 150px;
+
+            /deep/ .el-input__inner {
+                height: 32px;
+                line-height: 30px;
+            }
+            &.search-type {
+                float: left;
+                width: 100px;
+
+                /deep/ .el-input__inner {
+                    border-right: none;
+                    border-radius: 3px 0 0 3px;
+                }
+            }
+        }
+
+        .search-input {
+            float: left;
+            width: 180px;
+
+            /deep/ .el-input__inner {
+                border-radius: 3px;
+                height: 32px;
+                line-height: 30px;
+            }
+        }
+
+        .header-left {
+            float: left;
+            padding-right: 24px;
+            font-size: 12px;
+            color: rgba(51, 51, 51, 1);
+            line-height: 32px;
+        }
+
+        .header-right {
+            float: left;
+        }   
+    }
+
+}
+
+.section-container {
+    margin-top: 24px;
+    padding: 0 24px 24px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    border: 1px solid rgba(231, 232, 233, 1);
+
+    .section-item-header {
+        padding: 12px 0;
+
+        span {
+            height: 32px;
+            line-height: 32px;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        .add-coupon{
+            position: relative;
+            margin-left: 16px;
+            float: right;
+            width: auto;
+            padding: 0 16px;
+            height: 32px;
+            font-size: 12px;
+            line-height: 32px;
+            //background:$elec-green;
+            i {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                left: 16px;
+                display: block;
+                width: 24px;
+                height: 24px;
+                background: url('../../assets/img/add-station.png') no-repeat;
+                background-size: cover;
+            }
+
+        }
+
+        .batch-close{
+            background: $elec-red;
+        }
+
+        .send-btn {
+            text-align: center;
+            padding: 0 16px;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+    }
+
+    .section-main {
+        padding-top: 16px;
+
+        .table {
+            .td-item {
+                padding: 0 5px;
+            }
+
+            .table-column__1{
+                flex:0.4
+            }
+
+            .table-operate {
+                .td-item {
+                    margin: 0 8px;
+                    padding: 0;
+                }
+            }
+
+            .knob-text {
+                padding-left: 8px;
+            }
+
+            .is-c-c{
+                min-width: 96px;
+                text-align: center;
+                padding:  3px 14px;
+            }
+        }
+    }
+}
+
+.el-select-dropdown .el-select-dropdown__item {
+    height: 32px;
+    line-height: 32px;
+}
+
+.user-only{
+    .header-left{
+        padding-right: 0px !important;
+        .search-type{
+            width: 104px !important;
+            padding-right: 0px;
+        }
+    }
+    
+    .search-input{
+        margin-left: -4px;
+        position: relative;
+        /deep/ .el-input__inner{
+            width: 180px !important;
+            height: 32px !important;
+            border-radius: 3px 3px 3px 3px;
+        }
+    }
+}
+
+.send-btn{
+    position: relative;
+    margin-left: 16px;
+    float: right;
+    width: auto;
+    height: 32px;
+    font-size: 12px;
+    line-height: 32px;
+    text-align: center;
+    
+}
+.send-btn-car{
+    width: 110px !important;
+    padding: 0 16px 0 28px !important;
+    //background: $elec-green
+}
+
+.edit-icon-disable{
+    width: 20px;
+    height: 20px;
+    background: url('../../assets/img/edit-disabled.png') no-repeat;
+    background-size: cover;
+    cursor: not-allowed;
+}
+.delete-icon-disable{
+    width: 20px;
+    height: 20px;
+    background: url('../../assets/img/delete-disabled.png') no-repeat;
+    background-size: cover;
+    cursor: not-allowed;
+}
+.car-type-name{
+    text-align: center !important;
+    padding:  3px 0px;
+}
+
+//批量导入
+.import-process{
+    margin: 24px auto;
+}
+.import-word{
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+}
+//修改el-progress线性进度条的背景色
+.import-process /deep/ .el-progress-bar__outer{
+    background-color: $import-process;
+}
+.import-error{
+    display: flex;
+    justify-content: center;
+    line-height: 24px;
+    font-size: 12px;
+    color: $a-hover;
+    font-weight: bold;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+//批量导入
+.upload-demo{
+  /deep/ .el-button--primary{
+    color: $out-car-word;
+    background-color:transparent;
+    border-color:transparent;
+    height: 32px;
+    line-height:0;
+    margin-left: -8px;
+    position: absolute;
+    left: 30px;
+    top: 0;
+    }
+}
+//批量导入--小问号
+.tips-icon{
+    margin-left:2px;
+    position:absolute;
+    left:110px;
+    top:-5px;
+}
+.import-result-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 72px;
+        height: 72px;
+        margin-bottom: 8px;
+    }
+    p{
+        color: #333333;
+        font-size: 14px;
+    }
+} 
+.import-result-word{
+    color: #666666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 24px;
+    margin-top: 12px;
+    .import-common-word{
+        font-size: 12px;
+    }
+    .import-word{
+        font-weight: bold;
+    }
+}
+.import-sure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top:1px solid #E0E0E0;
+    padding-top: 12px;
+    margin-top: 12px;
+}
+.btn-word{
+    color: #666666 !important;
+}
