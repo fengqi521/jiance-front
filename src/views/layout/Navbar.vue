@@ -1,46 +1,36 @@
 <template>
   <nav>
-    <div class="logo">
-      <!-- <img :src="`${ENV}${LOGO}`" alt="">
-      <router-link to="/"></router-link> -->
-    </div>
+    <Logo />
     <div class="nav-right">
-      <!-- 账号资料 -->
-      <div class="account-outer" :class="[showSelect ? 'dropdown-open' : '']">
-        <div class="user-name ellipsis" @click.stop="onDropDown">{{ username }}</div>
-        <!-- 下拉框 -->
-        <div class="dropdown-outer">
-          <div class="dropdown-inner">
-            <router-link to="/info" class="dropdown-item">账号资料</router-link>
-            <div class="dropdown-item" @click="doLogout">退出</div>
-          </div>
-        </div>
-      </div>
+      <!-- 账号信息 -->
+      <Avatar :avatarUrl="avatarUrl" :userName="userName" :role="role"/>
     </div>
   </nav>
 </template>
 
 <script>
+import { Logo, Avatar } from './components'
 export default {
-  data () {
+  components: {
+    Logo,
+    Avatar
+  },
+  data() {
     return {
-      ENV: process.env.NODE_ENV == "development" ? "/api" : "",
-      showSelect: false,
-      username: Cookies.get("SuserId") ? Cookies.get("SuserId") : "游客",
-      LOGO: Cookies.get("SuserLogo") ? Cookies.get("SuserLogo") : ""
+      role:'超级管理员',
+      userName: Cookies.get("SuserId") ? Cookies.get("SuserId") : "游客",
+      avatarUrl:'http://5b0988e595225.cdn.sohucs.com/images/20190816/8afe3bfafdfa43a5ad75f0150af013df.jpeg',
+      // LOGO: Cookies.get("SuserLogo") ? Cookies.get("SuserLogo") : ""
     };
   },
-  mounted () {
-    var that = this;
-    document.addEventListener("click", e => {
-      that.showSelect = false;
-    });
+  mounted() {
+    
   },
   methods: {
-    onDropDown () {
+    onDropDown() {
       this.showSelect = !this.showSelect;
     },
-    doLogout () {
+    doLogout() {
       this.$api.doLogout().then(res => {
         if (res.code == 1) {
           Cookies.remove("SuserId");
@@ -52,6 +42,9 @@ export default {
   }
 };
 </script>
+<style lang="scss" scoped>
+
+</style>
 
 
 

@@ -1,14 +1,7 @@
-// import Vue from 'vue';
-// import Router from 'vue-router';
-
-import invoiceDetail from '../views/trad/invoiceDetail'
-
 const _import = require('./_import_' + process.env.NODE_ENV)
 // in development env not use Lazy Loading,because Lazy Loading large page will cause webpack hot update too slow
 // 所以只在生产中使用延迟加载
 
-// 第三方运营商统计
-import LayoutStat from '../views/layout/LayoutStat'
 // 数据分析
 const StatOperation = _import('stat/dataOperation')
 const StatMaintenanceChargingPile = _import('stat/dataChargingPile')
@@ -248,8 +241,7 @@ const DemoTabList = _import('demo/tabList')
  * meta : { role: ['admin'] }  will control the page role
  **/
 
-const constantRouterMap = [
-  {
+const constantRouterMap = [{
     path: '/login',
     component: Login,
     hidden: true
@@ -263,96 +255,8 @@ const constantRouterMap = [
     path: '/401',
     component: Err401,
     hidden: true
-  }, //无权限时重定向
-  // 运营商统计--第三方运营商---------开始
-  {
-    path: '/stat/data',
-    component: LayoutStat,
-    hidden: true,
-    children: [
-      {
-        path: 'operation',
-        component: StatOperation
-      },
-      {
-        path: 'charging',
-        component: StatMaintenanceChargingPile,
-        name: '运维数据分析-充电桩数据'
-      }
-    ]
-  },
-  {
-    path: '/stat/device',
-    component: LayoutStat,
-    hidden: true,
-    children: [
-      {
-        path: 'station',
-        component: StatDeviceStation
-      },
-      {
-        path: 'station/detail/:id',
-        component: StatStationDetail
-      },
-      {
-        path: 'station/operate/:id',
-        component: StatStationOperate
-      },
-      {
-        path: 'station/park/:id',
-        component: StatStationPark
-      },
-      {
-        path: 'pile',
-        component: StatPile
-      },
-      {
-        path: 'pile/detail/:id',
-        component: StatPileDetail
-      },
-      {
-        path: 'pile/operate/:id',
-        component: StatPileOperate
-      },
-      {
-        path: 'charge',
-        component: StatChargeLog
-      },
-      {
-        path: 'log',
-        component: StatLog
-      }
-    ]
-  },
-  {
-    path: '/stat/trad',
-    component: LayoutStat,
-    hidden: true,
-    children: [
-      {
-        name: '账单管理',
-        path: 'bill',
-        component: StatTradBill
-      },
-      {
-        name: '账单详情',
-        path: 'bill/detail/',
-        component: StatTradBillDetail
-      },
-      {
-        name: '售后管理',
-        path: 'service',
-        component: StatTradService
-      },
-      {
-        name: '售后详情',
-        path: 'service/detail',
-        component: StatTradServiceDetail
-      }
-    ]
   },
 
-  // 运营商统计--第三方运营商---------结束
   {
     path: '/',
     component: Layout,
@@ -363,8 +267,7 @@ const constantRouterMap = [
     path: '/data',
     component: Layout,
     hidden: true,
-    children: [
-      {
+    children: [{
         path: 'operation',
         component: Operation
       },
@@ -399,19 +302,16 @@ const constantRouterMap = [
     path: '/info',
     component: Layout,
     hidden: true,
-    children: [
-      {
-        path: '',
-        component: Account
-      }
-    ]
+    children: [{
+      path: '',
+      component: Account
+    }]
   },
   {
     path: '/device',
     component: Layout,
     hidden: true,
-    children: [
-      {
+    children: [{
         path: 'station',
         component: DeviceStation
       },
@@ -489,8 +389,7 @@ const constantRouterMap = [
     path: '/user',
     component: Layout,
     hidden: true,
-    children: [
-      {
+    children: [{
         path: 'users',
         component: AppUser
       },
@@ -560,8 +459,7 @@ const constantRouterMap = [
     path: '/vehicle',
     component: Layout,
     hidden: true,
-    children: [
-      {
+    children: [{
         path: 'car',
         name: '车辆管理',
         component: CarManager
@@ -602,8 +500,7 @@ const constantRouterMap = [
     path: '/card',
     component: Layout,
     hidden: true,
-    children: [
-      {
+    children: [{
         path: 'message',
         name: '卡信息管理',
         component: CardMessage
@@ -629,8 +526,7 @@ const constantRouterMap = [
     path: '/trad',
     component: Layout,
     hidden: true,
-    children: [
-      {
+    children: [{
         name: '账单管理',
         path: 'bill',
         component: TradBill
@@ -771,8 +667,7 @@ const constantRouterMap = [
     path: '/activity',
     component: Layout,
     hidden: true,
-    children: [
-      {
+    children: [{
         path: 'coupon',
         component: ActivitCoupon,
         name: '优惠管理'
@@ -878,8 +773,7 @@ const constantRouterMap = [
     path: '/connect',
     component: Layout,
     hidden: true,
-    children: [
-      {
+    children: [{
         path: 'operator',
         component: Connect,
         name: '运营商授权'
@@ -915,8 +809,7 @@ const constantRouterMap = [
     path: '/platform',
     component: Layout,
     hidden: true,
-    children: [
-      {
+    children: [{
         path: 'system',
         component: PlatSystem,
         name: '系统成员'
@@ -1025,8 +918,7 @@ const constantRouterMap = [
     path: '/company',
     component: Layout,
     hidden: true,
-    children: [
-      {
+    children: [{
         path: 'index',
         component: CompanyIndex,
         name: '企业信息'
@@ -1067,8 +959,7 @@ const constantRouterMap = [
     path: '/auth',
     component: Layout,
     hidden: true,
-    children: [
-      {
+    children: [{
         path: 'index',
         component: AuthIndex,
         name: '授权'
@@ -1124,8 +1015,7 @@ const constantRouterMap = [
     path: '/run',
     component: Layout,
     hidden: true,
-    children: [
-      {
+    children: [{
         path: 'monitor',
         component: Monitor,
         name: '设备监控'
@@ -1165,8 +1055,7 @@ const constantRouterMap = [
     path: '/demo',
     component: Layout,
     hidden: true,
-    children: [
-      {
+    children: [{
         path: 'list',
         component: DemoList,
         name: '模块列表'

@@ -1,6 +1,4 @@
 @import './mixin.scss';
-// @import "./nav.scss";
-// @import "./aside.scss";
 @import './table.scss';
 
 body {
@@ -13,6 +11,7 @@ body {
   background-color: #f4f4f4;
   -webkit-appearance: none;
   height: 100%;
+  font-size: 12px;
 }
 
 html {

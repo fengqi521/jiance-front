@@ -1,21 +1,14 @@
 nav {
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline:24px;
     height: 60px;
     background: $nav-top-background;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
     z-index: 2010;
-}
-
-nav .logo {
-    float: left;
-    padding: 6px 0;
-}
-
-nav .nav-right {
-    position: relative;
-    float: right;
-    padding: 16px 24px 0 0;
 }
 
 nav .account-outer {

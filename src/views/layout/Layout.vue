@@ -7,7 +7,9 @@
 </template>
 
 <script>
-import { Navbar, AppMain, Sidebar } from "views/layout";
+import Navbar from './Navbar.vue'
+import Sidebar from './Sidebar.vue'
+import AppMain from './AppMain.vue'
 
 export default {
   name: "layout",
