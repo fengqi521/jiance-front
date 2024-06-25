@@ -11,9 +11,6 @@
 </template>
 <script>
 export default {
-    data() {
-
-    },
     props: {
         avatarUrl: {
             type: String,

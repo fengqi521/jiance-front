@@ -2,6 +2,7 @@
   <nav>
     <Logo />
     <div class="nav-right">
+      <CurrentTime/>
       <!-- 账号信息 -->
       <Avatar :avatarUrl="avatarUrl" :userName="userName" :role="role"/>
     </div>
@@ -9,11 +10,12 @@
 </template>
 
 <script>
-import { Logo, Avatar } from './components'
+import { Logo, Avatar,CurrentTime } from './components'
 export default {
   components: {
     Logo,
-    Avatar
+    Avatar,
+    CurrentTime
   },
   data() {
     return {
@@ -43,7 +45,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-
+.nav-right{
+  display: flex;
+  align-items: center;
+}
 </style>
 
 

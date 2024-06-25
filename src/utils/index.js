@@ -1,5 +1,5 @@
 import crypto from 'crypto'
-
+import moment from 'moment'
 export function formatDate(date, format) {
   if (!date) return
   if (!format) format = 'yyyy-MM-dd HH:ss:mm'
@@ -215,8 +215,7 @@ export function toggleClass(element, className) {
   element.className = classString
 }
 
-export const pickerOptions = [
-  {
+export const pickerOptions = [{
     text: '今天',
     onClick(picker) {
       const end = new Date()
@@ -323,144 +322,6 @@ export function addClass(el, cls) {
   }
 }
 
-/* istanbul ignore next */
-export function removeClass(el, cls) {
-  if (!el || !cls) return
-  var classes = cls.split(' ')
-  var curClass = ' ' + el.className + ' '
-
-  for (var i = 0, j = classes.length; i < j; i++) {
-    var clsName = classes[i]
-    if (!clsName) continue
-
-    if (el.classList) {
-      el.classList.remove(clsName)
-    } else if (hasClass(el, clsName)) {
-      curClass = curClass.replace(' ' + clsName + ' ', ' ')
-    }
-  }
-  if (!el.classList) {
-    el.className = trim(curClass)
-  }
-}
-
-// export function checkFuncAuth(item) {
-//     var auth = authList.list;
-//     var auth_item = auth[item] ? auth[item] : '';
-//     var auth_list = localStorage.getItem("USER_PERMISSIONS") ? localStorage.getItem("USER_PERMISSIONS") : '';
-//     var auth_json = auth_list ? auth_list.split(",") : '';
-//     for (const key in auth_json) {
-//         var _item = auth_json[key]
-//         if (_item == auth_item) {
-//             return true;
-//         }
-//     }
-//     console.log('checkFuncAuth fail', item, '--', auth_item, '--', auth_list)
-//     return false;
-// }
-
-// export function getAuthMessage() {
-//     return authList.note;
-// }
-
-export function getAuthSign() {
-  var token = process.env.CLOUD_TOKEN
-  var id = process.env.CLOUD_ID
-  var tt = parseInt(new Date().getTime() / 1000) + ''
-  var md5 = crypto.createHash('md5')
-  var str = id + token + tt
-  md5.update(str)
-  var sign = md5.digest('hex')
-  var op = 'auth'
-  var authtype = 'md5sign'
-
-  return { sign: sign, id: id, tt: tt, op: op, authtype: authtype }
-}
-
-// export function getFirstAuthUrl(permissions)
-// {
-//     if(permissions.length == 0) {
-//         return "/#/info/index";
-//     }
-//     var menus = authList.menus;
-//     for (const key in menus) {
-//         if(permissions.indexOf(key) > -1) {
-//             return menus[key]
-//         }
-//     }
-//     return "/#/info/index";
-// }
-
-export function changeListSize() {
-  var step = -1,
-    docW = document.body.clientWidth,
-    _content = document.getElementsByClassName('section-content')[0]
-  if (!document.body.contains(_content)) return
-
-  while (docW - 424 > 296 * ++step);
-  _content.style.width = step * 296 + 'px'
-}
-
-export function checkCode(that, type) {
-  var timer = null
-  var second = Cookies.get(`${type}_second`)
-  that[`${type}_again`] = false
-  timer = setInterval(function () {
-    second--
-    if (second > 0) {
-      that[`${type}_second`] = second
-      Cookies.set(`${type}_second`, second)
-    } else {
-      that[`${type}_again`] = true
-      that[`${type}_second`] = 60
-      Cookies.set(`${type}_second`, 60)
-      clearInterval(timer)
-      timer = null
-    }
-  }, 1000)
-}
-
-export function handleKeydown(event) {
-  if (!/\d/.test(event.key) && event.keyCode != 8) {
-    event.preventDefault()
-    event.returnValue = false
-  }
-}
-
-export function paginateJump(that, page, cb) {
-  switch (page) {
-    case 1:
-      that.currentPage = 1
-      break
-    case 2:
-      if (that.currentPage > 1) {
-        that.currentPage--
-      } else {
-        that.currentPage = 1
-      }
-      break
-    case 3:
-      if (that.currentPage < that.page_count) {
-        that.currentPage++
-      } else {
-        that.currentPage = that.page_count
-      }
-      break
-    case 4:
-      that.currentPage = that.page_count
-      break
-  }
-
-  cb(that.currentPage)
-}
-
-export function onKeyDownScreen(event) {
-  if (event.keyCode == 69) {
-    event.preventDefault()
-    event.returnValue = false
-  }
-}
-
 /**
  * 取值小数点后两位
  * @param {string|number} num
@@ -472,4 +333,12 @@ export function toFixedNumber(num) {
   if (isNaN(number)) return 0
   if (!number) return number
   return number.toFixed(2)
+}
+
+/**
+ *  获取当前时间
+ */
+
+export function getCurrentTime() {
+  return  moment().locale('zh-cn').format('YYYY-MM-DD HH:mm:ss dddd');
 }
