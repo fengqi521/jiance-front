@@ -2,6 +2,14 @@
   说明
   1 颜色统一使用十六进制表示,方便查找更换
  */
+ :root {
+  --inline-color: #46be00;
+  --offline-color: #ff6632;
+}
+
+ $white-color:#FFF;
+ $gray-color:#666;
+ $orange-color:#e55b2c;
 //主色
 $company-color: #142aff;
 $origin-company-button: #0c0c0a;
@@ -52,6 +60,9 @@ $aside-act-after: #6675ff; //侧边栏选中-左边的小条条颜色
 
 // table
 $table-border-color: #eeeff1;
+
+// 边框
+$border-bg-color:#e7e8e9;
 
 // 路由-active
 // 切换页面 and 路由回退

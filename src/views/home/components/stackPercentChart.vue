@@ -11,26 +11,20 @@ export default {
       default: ''
     }
   },
-  data () {
+  data() {
     return {
       stackPercent_charts: ""
     };
   },
-  beforeDestroy () {
+  beforeDestroy() {
     window.removeEventListener("resize", () => {
       this.stackPercent_charts.resize();
     });
   },
-  // mounted () {
-  //   this.chart = echarts.init(this.$el);
-  //   console.log()
-  //   console.log(this.chart)
-  // },
   methods: {
     //处理数据
-    changeData (option) {
+    changeData(option) {
       let chartArr = [];
-      let colors = [];
       let legend = [];
       const choiceData = chartData[this.label];
       if (!choiceData) return;
@@ -39,18 +33,17 @@ export default {
         const item = choiceData[attr];
         if (typeof current === 'undefined') return;
         legend.push(item.name);
-        colors.push(item.color);
         if (Array.isArray(current) && current.length) {
           chartArr.push({ name: item.name, color: item.color, value: current });
+
         }
       });
-      return { x: option.date_x, legend, colors, data: chartArr };
+      return { x: option.date_x, legend, data: chartArr };
     },
 
-    getCommonConf (option) {
-      const { colors, legend, x, data } = this.changeData(option);
+    getCommonConf(option) {
+      const { legend, x, data } = this.changeData(option)
       var common_conf = this.$cmptConfig.getCommonStackBar();
-      common_conf.color = colors;
       common_conf.legend.data = legend;
       common_conf.xAxis.data = x;
       common_conf.series = data.map(({ name, color, value }) => {
@@ -61,13 +54,15 @@ export default {
           stack: '总量',
           label: { show: false },
           data: value,
+          itemStyle: { color },
           emphasis: { itemStyle: { color } }
         }
       })
+
       return common_conf;
     },
 
-    showEcharts (data) {
+    showEcharts(data) {
       var that = this;
       this.stackPercent_charts = echarts.init(
         document.getElementById("stackPercent_charts")

@@ -2,24 +2,6 @@ const _import = require('./_import_' + process.env.NODE_ENV)
 // in development env not use Lazy Loading,because Lazy Loading large page will cause webpack hot update too slow
 // 所以只在生产中使用延迟加载
 
-// 数据分析
-const StatOperation = _import('stat/dataOperation')
-const StatMaintenanceChargingPile = _import('stat/dataChargingPile')
-// 设备管理
-const StatDeviceStation = _import('stat/deviceStation')
-const StatStationDetail = _import('stat/deviceStationDetail')
-const StatStationOperate = _import('stat/deviceStationOperate')
-const StatStationPark = _import('stat/deviceStationPark')
-const StatPile = _import('stat/devicePile')
-const StatPileDetail = _import('stat/devicePileDetail')
-const StatPileOperate = _import('stat/devicePileOperate')
-const StatChargeLog = _import('stat/deviceCharge')
-const StatLog = _import('stat/deviceLog')
-// 交易中心
-const StatTradBill = _import('stat/tradBill')
-const StatTradBillDetail = _import('stat/tradBillDetail')
-const StatTradService = _import('stat/tradService')
-const StatTradServiceDetail = _import('stat/tradServiceDetail')
 
 import Layout from '../views/layout/Layout'
 
@@ -27,13 +9,8 @@ const Login = _import('login/index')
 const Err404 = _import('error/404')
 const Err401 = _import('error/401')
 
-// 概览
-const Operation = _import('data/operation')
-const MaintenanceVehicle = _import('data/maintenanceVehicle')
-const MaintenanceVehicleBattery = _import('data/maintenanceVehicleBattery')
-const MaintenanceChargingPile = _import('data/maintenanceChargingPile')
-const DataHistory = _import('data/history')
-const DataHistoryDetail = _import('data/historyDetail')
+// 首页
+const Home = _import('home/index')
 
 // 平台管理
 const Account = _import('info/index')
@@ -260,43 +237,17 @@ const constantRouterMap = [{
   {
     path: '/',
     component: Layout,
-    redirect: '/data/operation',
+    redirect: '/home',
     hidden: true
   },
   {
-    path: '/data',
+    path: '/home',
     component: Layout,
     hidden: true,
     children: [{
-        path: 'operation',
-        component: Operation
-      },
-      {
-        path: 'maintenance',
-        component: MaintenanceVehicle,
-        name: '运维数据分析-车辆数据'
-      },
-      {
-        path: 'maintenance/battery',
-        component: MaintenanceVehicleBattery,
-        name: '运维数据分析-车辆数据-电池类型'
-      },
-      {
-        path: 'maintenance/charging',
-        component: MaintenanceChargingPile,
-        name: '运维数据分析-充电桩数据'
-      },
-      {
-        path: 'history',
-        component: DataHistory,
-        name: '历史数据'
-      },
-      {
-        path: 'history/detail/:pile_name/:pile_sn/:pile_type',
-        component: DataHistoryDetail,
-        name: '历史数据详情'
-      }
-    ]
+      path: '',
+      component: Home
+    }]
   },
   {
     path: '/info',

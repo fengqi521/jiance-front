@@ -338,7 +338,7 @@ export const cmptConfig = {
                             + `width:6px;height:6px;background-color:${color};"></span>`;
 
                         formatterName = "<span style='font-weight:bold'>" + name + "</span><br/>";
-                        res += selfMarker + seriesName + "<span style='float:right'>" + value + "%" + "</span><br/>";
+                        res += selfMarker + seriesName + "<span style='float:right'>" + value  + "</span><br/>";
                     })
                     return formatterName + res;
                 },
